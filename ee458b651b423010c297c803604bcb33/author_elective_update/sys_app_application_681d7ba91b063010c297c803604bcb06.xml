@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>Antiques</name>
+        <order>100</order>
+        <roles>x_656683_oluhome.antiques_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-18 19:54:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>681d7ba91b063010c297c803604bcb06</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Antiques</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sys_app_application_681d7ba91b063010c297c803604bcb06</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-18 19:54:03</sys_updated_on>
+        <title>Antiques</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sys_app_application_681d7ba91b063010c297c803604bcb06</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>Antiques</name><order>100</order><roles>x_656683_oluhome.antiques_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-18 19:54:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>681d7ba91b063010c297c803604bcb06</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Antiques</sys_name><sys_overrides/><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sys_app_application_681d7ba91b063010c297c803604bcb06</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-18 19:54:03</sys_updated_on><title>Antiques</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>-1284660324</payload_hash>
+        <record_name>Antiques</record_name>
+        <reverted_from/>
+        <source>ee458b651b423010c297c803604bcb4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-18 19:54:03</sys_created_on>
+        <sys_id>681d7ba91b063010c297c803604bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b5ad3ee1a0000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-18 19:54:03</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>a01d7ba9fc06301018e7e232e7e46609</update_guid>
+        <update_guid_history>a01d7ba9fc06301018e7e232e7e46609:-1284660324</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Antiques">abed929a1b0eb010c297c803604bcbc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-20 20:53:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>345057a1c3744a948c8046e97c081490</sys_id>
+        <sys_metadata>681d7ba91b063010c297c803604bcb06</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Antiques</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sys_app_application_681d7ba91b063010c297c803604bcb06</sys_update_name>
+        <sys_update_version display_value="sys_app_application_681d7ba91b063010c297c803604bcb06">681d7ba91b063010c297c803604bcb09</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-20 20:53:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

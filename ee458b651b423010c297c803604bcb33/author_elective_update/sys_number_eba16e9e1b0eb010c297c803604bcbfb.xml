@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="DELETE">
+        <category display_value="" name="x_656683_oluhome_antique_art">x_656683_oluhome_antique_art</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>ANTA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-20 21:10:12</sys_created_on>
+        <sys_id>eba16e9e1b0eb010c297c803604bcbfb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANTA</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sys_number_eba16e9e1b0eb010c297c803604bcbfb</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-20 21:10:12</sys_updated_on>
+    </sys_number>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sys_number_eba16e9e1b0eb010c297c803604bcbfb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number"><sys_number action="INSERT_OR_UPDATE"><category display_value="" name="x_656683_oluhome_antique_art">x_656683_oluhome_antique_art</category><maximum_digits>7</maximum_digits><number>1000</number><prefix>ANTA</prefix><sys_class_name>sys_number</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-20 21:10:12</sys_created_on><sys_id>eba16e9e1b0eb010c297c803604bcbfb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ANTA</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sys_number_eba16e9e1b0eb010c297c803604bcbfb</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-20 21:10:12</sys_updated_on></sys_number></record_update>]]></payload>
+        <payload_hash>646965346</payload_hash>
+        <record_name>ANTA</record_name>
+        <reverted_from/>
+        <source>ee458b651b423010c297c803604bcb4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-20 21:10:13</sys_created_on>
+        <sys_id>67a1ae9e1b0eb010c297c803604bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b65665f480000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-20 21:10:13</sys_updated_on>
+        <type>Number</type>
+        <update_guid>afa1ae9ed40eb010c4a85218c0de6d02</update_guid>
+        <update_guid_history>afa1ae9ed40eb010c4a85218c0de6d02:646965346</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-21 21:17:05</sys_created_on>
+        <sys_db_object display_value="" name="sys_number">sys_number</sys_db_object>
+        <sys_id>3f12e4c85be54bf493d304c5ab7d05f9</sys_id>
+        <sys_metadata>eba16e9e1b0eb010c297c803604bcbfb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ANTA</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent display_value="">6e512a9e1b0eb010c297c803604bcb02</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sys_number_eba16e9e1b0eb010c297c803604bcbfb</sys_update_name>
+        <sys_update_version display_value="sys_number_eba16e9e1b0eb010c297c803604bcbfb">67a1ae9e1b0eb010c297c803604bcb03</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-21 21:17:05</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

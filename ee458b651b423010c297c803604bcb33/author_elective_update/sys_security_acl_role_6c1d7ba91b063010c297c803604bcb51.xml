@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-18 19:54:04</sys_created_on>
+        <sys_id>6c1d7ba91b063010c297c803604bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_656683_oluhome_antiques.x_656683_oluhome.antiques_user</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_security_acl display_value="x_656683_oluhome_antiques">241d7ba91b063010c297c803604bcb4e</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_6c1d7ba91b063010c297c803604bcb51</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-18 19:54:04</sys_updated_on>
+        <sys_user_role display_value="x_656683_oluhome.antiques_user" name="x_656683_oluhome.antiques_user">181df3a91b063010c297c803604bcb5a</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sys_security_acl_role_6c1d7ba91b063010c297c803604bcb51</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-18 19:54:04</sys_created_on><sys_id>6c1d7ba91b063010c297c803604bcb51</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_656683_oluhome_antiques.x_656683_oluhome.antiques_user</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_security_acl display_value="x_656683_oluhome_antiques">241d7ba91b063010c297c803604bcb4e</sys_security_acl><sys_update_name>sys_security_acl_role_6c1d7ba91b063010c297c803604bcb51</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-18 19:54:04</sys_updated_on><sys_user_role display_value="x_656683_oluhome.antiques_user" name="x_656683_oluhome.antiques_user">181df3a91b063010c297c803604bcb5a</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>-2001184299</payload_hash>
+        <record_name>x_656683_oluhome_antiques.x_656683_oluhome.antiques_user</record_name>
+        <reverted_from/>
+        <source>ee458b651b423010c297c803604bcb4e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-18 19:54:04</sys_created_on>
+        <sys_id>e41d7ba91b063010c297c803604bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b5ad3f01c0000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-18 19:54:04</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>201d7ba9cf063010bad5e9fd63359454</update_guid>
+        <update_guid_history>201d7ba9cf063010bad5e9fd63359454:-2001184299</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_656683_oluhome_antiques.x_656683_oluhome.antiques_user">29dd129a1b0eb010c297c803604bcb94</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-20 20:53:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>1b1e9fdc30db47da89c3630692e2a7c1</sys_id>
+        <sys_metadata>6c1d7ba91b063010c297c803604bcb51</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_656683_oluhome_antiques.x_656683_oluhome.antiques_user</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent display_value="">241d7ba91b063010c297c803604bcb4e</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_6c1d7ba91b063010c297c803604bcb51</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_6c1d7ba91b063010c297c803604bcb51">e41d7ba91b063010c297c803604bcb54</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-20 20:53:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

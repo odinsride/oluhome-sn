@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Base Collection Item" max_length="40" name="x_656683_oluhome_base_collection_item" sizeclass="1" type="collection">
+        <element label="Appraisal date" max_length="40" name="appraisal_date" type="glide_date"/>
+        <element label="Appraisal value" max_length="20" name="appraisal_value" type="currency"/>
+        <element label="Appraised?" max_length="40" name="appraised" type="boolean"/>
+        <element label="Estimated value" max_length="20" name="estimated_value" type="currency"/>
+        <element label="Height" max_length="20" name="height" type="decimal"/>
+        <element label="Known provenance?" max_length="40" name="known_provenance" type="boolean"/>
+        <element label="Known restorations?" max_length="40" name="known_restorations" type="boolean"/>
+        <element label="Length" max_length="20" name="length" type="decimal"/>
+        <element label="Maker" max_length="40" name="maker" type="string"/>
+        <element label="Notes" max_length="8000" name="notes" type="html"/>
+        <element label="Origin" max_length="40" name="origin" type="string"/>
+        <element label="Photo" max_length="40" name="photo" type="user_image"/>
+        <element choice="1" label="Primary color" max_length="40" name="primary_color" type="choice">
+            <choice/>
+        </element>
+        <element label="Provenance notes" max_length="40" name="provenance_notes" type="string"/>
+        <element label="Purchase date" max_length="40" name="purchase_date" type="glide_date"/>
+        <element label="Purchase price" max_length="20" name="purchase_price" type="currency"/>
+        <element label="Restoration notes" max_length="40" name="restoration_notes" type="string"/>
+        <element label="Seller" max_length="32" name="seller" reference="core_company" type="reference"/>
+        <element label="Short description" max_length="100" name="short_description" type="string"/>
+        <element label="Signature" max_length="40" name="signature" type="user_image"/>
+        <element label="Signed?" max_length="40" name="signed" type="boolean"/>
+        <element label="Style" max_length="40" name="style" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Ticket price" max_length="20" name="ticket_price" type="currency"/>
+        <element label="Time period" max_length="40" name="time_period" type="string"/>
+        <element label="Width" max_length="20" name="width" type="decimal"/>
+        <index name="index">
+            <element name="seller"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>

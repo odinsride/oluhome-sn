@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="style" label="Style" language="en" table="x_656683_oluhome_base_collection_item">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>style</element>
+            <help/>
+            <hint/>
+            <label>Style</label>
+            <language>en</language>
+            <name>x_656683_oluhome_base_collection_item</name>
+            <plural>Styles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 21:21:30</sys_created_on>
+            <sys_id>f6dd2be21b023410c297c803604bcbe6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Style</sys_name>
+            <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+            <sys_update_name>sys_documentation_x_656683_oluhome_base_collection_item_style_en</sys_update_name>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 21:21:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
