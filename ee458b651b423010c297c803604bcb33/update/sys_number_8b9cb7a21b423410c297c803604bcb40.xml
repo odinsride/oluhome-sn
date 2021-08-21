@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_656683_oluhome_base_collection_item">x_656683_oluhome_base_collection_item</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>OLU</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-21 22:25:59</sys_created_on>
+        <sys_id>8b9cb7a21b423410c297c803604bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>OLU</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sys_number_8b9cb7a21b423410c297c803604bcb40</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-21 22:25:59</sys_updated_on>
+    </sys_number>
+</record_update>
