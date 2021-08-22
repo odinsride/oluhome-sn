@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	console.log(c.data.collectionClasses);
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>oluhome-header</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>oluhome Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.collectionClasses = [];
+	
+	var grClasses = new GlideAggregate('x_656683_oluhome_base_collection_item');
+	grClasses.addAggregate('count');
+	grClasses.orderByAggregate('count');
+	grClasses.groupBy('sys_class_name');
+	grClasses.query();
+	while(grClasses.next()) {
+		data.collectionClasses.push(grClasses.sys_class_name.getDisplayValue());
+	}
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-22 11:36:56</sys_created_on>
+        <sys_id>e69172721b0e3410c297c803604bcb92</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>oluhome Header</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_header_footer_e69172721b0e3410c297c803604bcb92</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-22 11:54:13</sys_updated_on>
+        <template><![CDATA[<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <h2 class="title">
+        oluhome
+      </h2>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item" ng-repeat="class in c.data.collectionClasses">
+        {{ class }}
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>]]></template>
+    </sp_header_footer>
+</record_update>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element extends="x_656683_oluhome_base_collection_item" label="Art" max_length="40" name="x_656683_oluhome_art" type="collection">
+    <element extends="x_656683_oluhome_base_collection_item" label="Art" max_length="40" name="x_656683_oluhome_art" sizeclass="1" type="collection">
         <element label="Artist" max_length="40" name="artist" type="string"/>
         <element label="Medium" max_length="200" name="medium" type="string"/>
         <element label="Title" max_length="200" name="title" type="string"/>

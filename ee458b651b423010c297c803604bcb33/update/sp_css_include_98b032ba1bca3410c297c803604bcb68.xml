@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="INSERT_OR_UPDATE">
+        <name>Google Fonts - Mulish</name>
+        <source>url</source>
+        <sp_css/>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-22 11:33:10</sys_created_on>
+        <sys_id>98b032ba1bca3410c297c803604bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Google Fonts - Mulish</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_css_include_98b032ba1bca3410c297c803604bcb68</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-22 11:33:10</sys_updated_on>
+        <url>https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&amp;display=swap</url>
+    </sp_css_include>
+</record_update>
