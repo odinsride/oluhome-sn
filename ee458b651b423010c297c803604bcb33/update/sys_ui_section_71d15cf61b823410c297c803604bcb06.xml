@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Appraisal" section_id="71d15cf61b823410c297c803604bcb06" sys_domain="global" table="x_656683_oluhome_furniture" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>appraised</element>
+            <position>0</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 23:58:43</sys_created_on>
+            <sys_id>b1d15cf61b823410c297c803604bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_furniture" sys_domain="global" view="Default view">71d15cf61b823410c297c803604bcb06</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 23:58:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 23:58:43</sys_created_on>
+            <sys_id>35d15cf61b823410c297c803604bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_furniture" sys_domain="global" view="Default view">71d15cf61b823410c297c803604bcb06</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 23:58:43</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>appraisal_date</element>
+            <position>2</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 23:58:43</sys_created_on>
+            <sys_id>b5d15cf61b823410c297c803604bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_furniture" sys_domain="global" view="Default view">71d15cf61b823410c297c803604bcb06</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 23:58:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>appraisal_value</element>
+            <position>3</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 23:58:43</sys_created_on>
+            <sys_id>39d15cf61b823410c297c803604bcb07</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_furniture" sys_domain="global" view="Default view">71d15cf61b823410c297c803604bcb06</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 23:58:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Appraisal</caption>
+            <header>false</header>
+            <name>x_656683_oluhome_furniture</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-21 23:58:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>71d15cf61b823410c297c803604bcb06</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_656683_oluhome_furniture</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+            <sys_update_name>sys_ui_section_71d15cf61b823410c297c803604bcb06</sys_update_name>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-21 23:58:43</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
