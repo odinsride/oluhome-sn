@@ -13,13 +13,25 @@
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Origin" max_length="40" name="origin" type="string"/>
         <element label="Photo" max_length="40" name="photo" type="user_image"/>
-        <element choice="1" label="Primary color" max_length="40" name="primary_color" type="choice">
-            <choice/>
+        <element choice="2" label="Primary color" max_length="40" name="primary_color" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Brown"/>
+                <element inactive_on_update="false" label="Green"/>
+                <element inactive_on_update="false" label="Orange"/>
+                <element inactive_on_update="false" label="Pink"/>
+                <element inactive_on_update="false" label="Purple"/>
+                <element inactive_on_update="false" label="Red"/>
+                <element inactive_on_update="false" label="White"/>
+                <element inactive_on_update="false" label="Yellow"/>
+                <element inactive_on_update="false" label="Black" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Black" sequence="0"/>
+            </choice>
         </element>
         <element label="Provenance notes" max_length="1000" name="provenance_notes" type="string"/>
         <element label="Purchase date" max_length="40" name="purchase_date" type="glide_date"/>
         <element label="Purchase price" max_length="20" name="purchase_price" type="currency"/>
         <element label="Restoration notes" max_length="1000" name="restoration_notes" type="string"/>
+        <element label="Self-appraisal value" max_length="20" name="self_appraisal_value" type="currency"/>
         <element label="Seller" max_length="32" name="seller" reference="core_company" type="reference"/>
         <element label="Short description" max_length="100" name="short_description" type="string"/>
         <element label="Signature" max_length="40" name="signature" type="user_image"/>

@@ -4,13 +4,13 @@
             <element>appraised</element>
             <position>0</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-08-21 22:31:42</sys_created_on>
-            <sys_id>4fedbbe21b423410c297c803604bcbc5</sys_id>
+            <sys_created_on>2021-08-22 23:49:37</sys_created_on>
+            <sys_id>4659510f1b467410c297c803604bcb33</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_base_collection_item" sys_domain="global" view="Default view">83edbbe21b423410c297c803604bcb1e</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-08-21 22:31:42</sys_updated_on>
+            <sys_updated_on>2021-08-22 23:49:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>.split</element>
             <position>1</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-08-21 22:31:42</sys_created_on>
-            <sys_id>cfedbbe21b423410c297c803604bcbc5</sys_id>
+            <sys_created_on>2021-08-22 23:49:37</sys_created_on>
+            <sys_id>ca59510f1b467410c297c803604bcb33</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_base_collection_item" sys_domain="global" view="Default view">83edbbe21b423410c297c803604bcb1e</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-08-21 22:31:42</sys_updated_on>
+            <sys_updated_on>2021-08-22 23:49:37</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>appraisal_date</element>
             <position>2</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-08-21 22:31:42</sys_created_on>
-            <sys_id>43edbbe21b423410c297c803604bcbc6</sys_id>
+            <sys_created_on>2021-08-22 23:49:37</sys_created_on>
+            <sys_id>4259510f1b467410c297c803604bcb34</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_base_collection_item" sys_domain="global" view="Default view">83edbbe21b423410c297c803604bcb1e</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-08-21 22:31:42</sys_updated_on>
+            <sys_updated_on>2021-08-22 23:49:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,27 @@
             <element>appraisal_value</element>
             <position>3</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-08-21 22:31:42</sys_created_on>
-            <sys_id>c3edbbe21b423410c297c803604bcbc6</sys_id>
+            <sys_created_on>2021-08-22 23:49:37</sys_created_on>
+            <sys_id>c659510f1b467410c297c803604bcb34</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_base_collection_item" sys_domain="global" view="Default view">83edbbe21b423410c297c803604bcb1e</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-08-21 22:31:42</sys_updated_on>
+            <sys_updated_on>2021-08-22 23:49:37</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>self_appraisal_value</element>
+            <position>4</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-22 23:49:37</sys_created_on>
+            <sys_id>4e59510f1b467410c297c803604bcb34</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Appraisal" display_value="Appraisal" name="x_656683_oluhome_base_collection_item" sys_domain="global" view="Default view">83edbbe21b423410c297c803604bcb1e</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-22 23:49:37</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

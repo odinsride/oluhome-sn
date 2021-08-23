@@ -21,20 +21,80 @@
             <element>sys_class_name</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Base Collection Item</label>
+            <label>Art</label>
             <language>en</language>
             <name>x_656683_oluhome_base_collection_item</name>
             <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-22 23:49:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bd59110f1b467410c297c803604bcbf1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-22 23:49:36</sys_updated_on>
+            <value>x_656683_oluhome_art</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sys_class_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Base Collection Item</label>
+            <language>en</language>
+            <name>x_656683_oluhome_base_collection_item</name>
+            <sequence>1</sequence>
             <synonyms/>
             <sys_created_by>kcuster</sys_created_by>
             <sys_created_on>2021-08-21 22:31:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>83edbbe21b423410c297c803604bcba2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-22 23:49:36</sys_updated_on>
+            <value>x_656683_oluhome_base_collection_item</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sys_class_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Decorative Item</label>
+            <language>en</language>
+            <name>x_656683_oluhome_base_collection_item</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-22 23:49:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8259110f1b467410c297c803604bcbf5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-08-21 22:31:42</sys_updated_on>
-            <value>x_656683_oluhome_base_collection_item</value>
+            <sys_updated_on>2021-08-22 23:49:36</sys_updated_on>
+            <value>x_656683_oluhome_decorative_item</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>sys_class_name</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Furniture</label>
+            <language>en</language>
+            <name>x_656683_oluhome_base_collection_item</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-08-22 23:49:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a59110f1b467410c297c803604bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-08-22 23:49:36</sys_updated_on>
+            <value>x_656683_oluhome_furniture</value>
         </sys_choice>
     </sys_choice>
 </record_update>
