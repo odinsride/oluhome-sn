@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
+    <m2m_sp_theme_css_include action="DELETE">
+        <order>50</order>
+        <sp_css_include display_value="Bulma Variables">1ba97bfb1bca3810c297c803604bcbfa</sp_css_include>
+        <sp_theme display_value="oluhome">d1c26eb21bca3410c297c803604bcbcf</sp_theme>
+        <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:25:55</sys_created_on>
+        <sys_id>a8c9bbfb1bca3810c297c803604bcbab</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Bulma Variables.oluhome</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>m2m_sp_theme_css_include_a8c9bbfb1bca3810c297c803604bcbab</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:32:40</sys_updated_on>
+    </m2m_sp_theme_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>m2m_sp_theme_css_include_a8c9bbfb1bca3810c297c803604bcbab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include"><m2m_sp_theme_css_include action="INSERT_OR_UPDATE"><order>50</order><sp_css_include display_value="Bulma Variables">1ba97bfb1bca3810c297c803604bcbfa</sp_css_include><sp_theme display_value="oluhome">d1c26eb21bca3410c297c803604bcbcf</sp_theme><sys_class_name>m2m_sp_theme_css_include</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-25 19:25:55</sys_created_on><sys_id>a8c9bbfb1bca3810c297c803604bcbab</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Bulma Variables.oluhome</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>m2m_sp_theme_css_include_a8c9bbfb1bca3810c297c803604bcbab</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-25 19:32:40</sys_updated_on></m2m_sp_theme_css_include></record_update>]]></payload>
+        <payload_hash>-1783449250</payload_hash>
+        <record_name>Bulma Variables.oluhome</record_name>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:32:40</sys_created_on>
+        <sys_id>234bf77f1bca3810c297c803604bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b7eccdee70000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:32:40</sys_updated_on>
+        <type>Stylesheets</type>
+        <update_guid>6b4bf77f48ca381009241f23552023c5</update_guid>
+        <update_guid_history>6b4bf77f48ca381009241f23552023c5:-1783449250,3a0bf77f91ca3810fd2339c401190abf:449687918,5bc9373ff3ca38101909873abf2f5083:274589352,68c9bbfb5dca38106774bfef695a56ad:-780845717</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bulma Variables.oluhome">95fbb7bf1bca3810c297c803604bcbfc</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:35:31</sys_created_on>
+        <sys_db_object display_value="" name="m2m_sp_theme_css_include">m2m_sp_theme_css_include</sys_db_object>
+        <sys_id>30be24348a6d46d482f8390f33d47710</sys_id>
+        <sys_metadata>a8c9bbfb1bca3810c297c803604bcbab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulma Variables.oluhome</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>m2m_sp_theme_css_include_a8c9bbfb1bca3810c297c803604bcbab</sys_update_name>
+        <sys_update_version display_value="m2m_sp_theme_css_include_a8c9bbfb1bca3810c297c803604bcbab">234bf77f1bca3810c297c803604bcbc6</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:35:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

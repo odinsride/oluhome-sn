@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>oluhome - %item_name - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="oluhome_collection_item">d944a51b1b46b410c297c803604bcb8f</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:16:49</sys_created_on>
+        <sys_id>7774691b1b46b410c297c803604bcb6c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>oluhome - %item_name - Container 2</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_container_7774691b1b46b410c297c803604bcb6c</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:53:22</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sp_container_7774691b1b46b410c297c803604bcb6c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>oluhome - %item_name - Container 2</name><order>2</order><sp_page display_value="oluhome_collection_item">d944a51b1b46b410c297c803604bcb8f</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-23 19:16:49</sys_created_on><sys_id>7774691b1b46b410c297c803604bcb6c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>oluhome - %item_name - Container 2</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sp_container_7774691b1b46b410c297c803604bcb6c</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-23 19:53:22</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-559132658</payload_hash>
+        <record_name>oluhome - %item_name - Container 2</record_name>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:53:22</sys_created_on>
+        <sys_id>c3dc65131b86b410c297c803604bcbf2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b749318f70000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:53:22</sys_updated_on>
+        <type>Container</type>
+        <update_guid>0fdc65130f86b410cd1f15fda65a4cf1</update_guid>
+        <update_guid_history>0fdc65130f86b410cd1f15fda65a4cf1:-559132658,b774691bac46b410142f1e5c4fe29d6e:472552173</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="oluhome - %item_name - Container 2">7ceca5131b86b410c297c803604bcb99</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:53:29</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>09d2cda1adfe41d88225e2fb152d7e79</sys_id>
+        <sys_metadata>7774691b1b46b410c297c803604bcb6c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>oluhome - %item_name - Container 2</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sp_container_7774691b1b46b410c297c803604bcb6c</sys_update_name>
+        <sys_update_version display_value="sp_container_7774691b1b46b410c297c803604bcb6c">c3dc65131b86b410c297c803604bcbf2</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:53:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

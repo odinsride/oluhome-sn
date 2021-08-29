@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size/>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="1">f374691b1b46b410c297c803604bcb6f</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:16:49</sys_created_on>
+        <sys_id>fb74691b1b46b410c297c803604bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_column_fb74691b1b46b410c297c803604bcb71</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:16:49</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sp_column_fb74691b1b46b410c297c803604bcb71</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size/><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f374691b1b46b410c297c803604bcb6f</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-23 19:16:49</sys_created_on><sys_id>fb74691b1b46b410c297c803604bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sp_column_fb74691b1b46b410c297c803604bcb71</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-23 19:16:49</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>1955614311</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:16:49</sys_created_on>
+        <sys_id>7f74a91b1b46b410c297c803604bcb3a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b7471a3040000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:16:49</sys_updated_on>
+        <type>Column</type>
+        <update_guid>b774691b9046b410f18ba5ad5b6c5873</update_guid>
+        <update_guid_history>b774691b9046b410f18ba5ad5b6c5873:1955614311</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">b4eca5131b86b410c297c803604bcb90</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:53:29</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>8988411cc84c4dca8ae3b7d47863ede4</sys_id>
+        <sys_metadata>fb74691b1b46b410c297c803604bcb71</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sp_column_fb74691b1b46b410c297c803604bcb71</sys_update_name>
+        <sys_update_version display_value="sp_column_fb74691b1b46b410c297c803604bcb71">7f74a91b1b46b410c297c803604bcb3a</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-23 19:53:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	
+	c.showModal = function(sysId) {
+		var modalId = "#modal_" + sysId;
+		var modalDialog = document.querySelector(modalId);
+		modalDialog.classList.add('is-active');
+	}
+	
+	c.closeModal = function(sysId) {
+		var modalId = "#modal_" + sysId;
+		var modalDialog = document.querySelector(modalId);
+		modalDialog.classList.remove('is-active');
+	}
+	
+	c.discountClass = function(discount) {
+		if (discount > 0) {
+			return 'has-text-success';
+		}
+	}
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.box {
+  padding: 3rem;
+}
+
+.level {
+  margin-bottom: 3rem; 
+}
+
+figure.image {
+  width: 100%;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  
+  transition: all 0.2s ease;
+  
+  &amp;:hover {
+    transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
+   	box-shadow: rgba(60, 64, 67, 0.3) 0px 2px 4px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: all 0.2s ease; /* zoom in */
+    cursor: pointer; 
+  }
+  
+  img {
+    border-radius: 5px;
+  }
+}
+
+.table {
+  width: unset;
+  max-width: unset;
+  margin-bottom: unset;
+  background-color: transparent;
+}
+
+th, td {
+  border: none !important;
+}
+
+.block:not(:last-of-type) {
+  margin-bottom: 3rem;
+}
+
+p {
+  line-height: 1.8;
+}
+
+.column {
+  figure.image {
+    margin-bottom: 0;
+  }
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.image.is-square {
+  img {
+  	object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .modal-card, .modal-content {
+      width: 800px;
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>oluhome-item-detail</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>oluhome Item Detail</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+	data.item_id = $sp.getParameter('sys_id');
+	data.item_table = '';
+	data.item = {};
+	
+	// Get the table/class
+	var grBaseItem = new GlideRecord('x_656683_oluhome_base_collection_item');
+	grBaseItem.get(data.item_id);
+	data.item_table = grBaseItem.getValue('sys_class_name');
+	
+	
+	// Get item details
+	var grItem = new GlideRecord(data.item_table);
+	grItem.get(data.item_id);
+	
+	if (grItem.next) {
+		var item = {};
+		// Basic Info
+		item.number = grItem.getValue('number');
+		item.short_description = grItem.getValue('short_description');
+		item.notes = grItem.getValue('notes');
+		item.photo = grItem.getDisplayValue('photo');
+		item.updated = grItem.getDisplayValue('sys_updated_on');
+		item.updated_by = grItem.getDisplayValue('sys_updated_by');
+		item.purchase_date = grItem.getDisplayValue('purchase_date');
+		item.seller = grItem.getDisplayValue('seller');
+		
+		// Valuation
+		item.purchase_price = grItem.getDisplayValue('purchase_price');
+		item.ticket_price = grItem.getDisplayValue('ticket_price');
+		item.estimated_value = grItem.getDisplayValue('estimated_value');
+		item.discount = Math.round(100 - (grItem.getValue('purchase_price') / grItem.getValue('ticket_price') * 100));
+		
+		// Item Details
+		item.origin = grItem.getValue('origin');
+		item.style = grItem.getValue('style');
+		item.time_period = grItem.getValue('time_period');
+		item.signed = grItem.getValue('signed') == true || false;
+		if (item.signed) {
+			item.signature = grItem.getDisplayValue('signature');
+		}
+		
+		// Physical
+		item.primary_color = grItem.getDisplayValue('primary_color');
+		item.length = grItem.getValue('length');
+		item.width = grItem.getValue('width');
+		item.height = grItem.getValue('height');
+		
+		// Restoration
+		item.known_restorations = grItem.getValue('known_restorations') == true || false;
+		item.restoration_notes = formatHTML(grItem.getValue('restoration_notes'));
+	
+		// Provenance
+		item.known_provenance = grItem.getValue('known_provenance') == true || false;
+		item.provenance_notes = formatHTML(grItem.getValue('provenance_notes'));
+		
+		// Art Fields
+		if (data.item_table == 'x_656683_oluhome_art') {
+			item.artist = grItem.getDisplayValue('artist');
+			item.title = grItem.getDisplayValue('title');
+			item.medium = grItem.getDisplayValue('medium');
+		}
+		
+		data.item = item;		
+	}
+	
+	// Get item attachments
+	data.imageAttachments = [];
+	data.fileAttachments = [];
+	
+	var attachment = new GlideSysAttachment();
+	var agr = attachment.getAttachments(data.item_table, data.item_id);
+
+	while(agr.next()) {
+		var itemAttachment = {};
+		itemAttachment.file_name = agr.getValue('file_name');
+		itemAttachment.sys_id = agr.getValue('sys_id');
+		itemAttachment.file_type = agr.getValue('content_type');
+		if (itemAttachment.file_type.indexOf('image') !== -1)
+			data.imageAttachments.push(itemAttachment);
+		else
+			data.fileAttachments.push(itemAttachment);
+	}
+	
+	function formatHTML(content) {
+		if(content)
+			return content.replace(/\n/g, '<br/>');
+		else
+			return;
+	}
+	
+	function formatNumber(number) {
+		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");     // Insert commas at correct position
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-23 19:35:53</sys_created_on>
+        <sys_id>13c8e55b1b46b410c297c803604bcb0c</sys_id>
+        <sys_mod_count>240</sys_mod_count>
+        <sys_name>oluhome Item Detail</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_widget_13c8e55b1b46b410c297c803604bcb0c</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-29 10:41:52</sys_updated_on>
+        <template><![CDATA[<div class="box">
+<!-- your widget template -->
+  <div class="level">
+    <div class="level-left">
+      <div class="level-item">
+        <div>
+          <h4 class="text-muted is-family-sans-serif has-text-weight-bold">
+            {{ c.data.item.number }}
+          </h4>
+          <h2 class="title is-2 has-text-link">
+            {{ c.data.item.short_description }}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="level-right">
+      <div class="level-item">
+      	<div>
+          <h4 class="text-muted has-text-right-tablet has-text-centered-mobile is-family-sans-serif has-text-weight-bold">
+            Value
+          </h4>
+          <h2 class="title is-2 has-text-success-dark">
+            {{ c.data.item.estimated_value }}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="block">
+      <div class="columns">
+        <div class="column is-one-third-tablet">
+          <figure class="image" ng-click="c.showModal(c.data.item_id)">
+            <img ng-src="{{c.data.item.photo}}" ng-alt="{{c.data.item.short_description}}" />
+          </figure>
+          
+          <div id="modal_{{c.data.item_id}}" class="modal">
+            <div class="modal-background" ng-click="c.closeModal(c.data.item_id)"></div>
+            <div class="modal-content">
+              <p class="image">
+                <img src="{{c.data.item.photo}}" alt="{{c.data.item.short_description}}">
+              </p>
+            </div>
+            <button class="modal-close is-large" ng-click="c.closeModal(c.data.item_id)" aria-label="close"></button>
+          </div>
+        </div>
+        
+        <div class="column">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="is-size-5 has-text-link" colspan="2">Purchase Info</th> 
+              </tr>
+              <tr>
+                <th class="">Seller</th>
+                <td class="">{{c.data.item.seller}}</td>
+              </tr>
+              <tr>
+                <th class="">Ticket Price</th>
+                <td class="">{{c.data.item.ticket_price}}</td>
+              </tr>
+              <tr>
+                <th class="">Purchase Price</th>
+                <td class="">{{c.data.item.purchase_price}}</td>
+              </tr>
+              <tr>
+                <th class="">Discount</th>
+                <td ng-class="c.discountClass(c.data.item.discount)">{{c.data.item.discount}}%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+    <div class="block">
+      <h3 class="title is-4">
+        Description
+      </h3>
+      <p ng-bind-html="c.data.item.notes"></p>
+    </div>
+    
+    <div class="block" ng-show="c.data.item.known_provenance">
+      <h3 class="title is-4">
+        Provenance
+      </h3>
+      <p ng-bind-html="c.data.item.provenance_notes"></p>
+    </div>
+    <div class="block" ng-show="c.data.item.known_restorations">
+      <h3 class="title is-4">
+        Restorations
+      </h3>
+      <p ng-bind-html="c.data.item.restoration_notes"></p>
+    </div>            
+    
+    <!-- Photos -->
+    <div class="block" ng-show="c.data.imageAttachments.length > 0">
+      <h3 class="title is-4">
+      	Additional Photos
+      </h3>
+      <div class="columns is-multiline">
+        <div class="column is-one-third-tablet is-one-fifth-desktop" ng-repeat="image in c.data.imageAttachments track by image.sys_id">
+          <figure class="image is-square" ng-click="c.showModal(image.sys_id)">
+            <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" />
+          </figure>
+
+          <div id="modal_{{image.sys_id}}" class="modal">
+            <div class="modal-background" ng-click="c.closeModal(image.sys_id)"></div>
+            <div class="modal-content">
+              <p class="image">
+                <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" alt="">
+              </p>
+            </div>
+            <button class="modal-close is-large" ng-click="c.closeModal(image.sys_id)" aria-label="close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Item Details -->
+    <div class="block">
+      <h3 class="title is-4">
+        Item Details
+      </h3>
+      
+      <div class="columns is-multiline">
+  
+        <!-- Art -->
+        <div class="column" ng-show="c.data.item_table == 'x_656683_oluhome_art'">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="is-size-5 has-text-link" colspan="2">Art Details</th> 
+              </tr>
+              <tr>
+                <th class="">Artist</th>
+                <td class="">{{c.data.item.artist}}</td>
+              </tr>
+              <tr>
+                <th class="">Title</th>
+                <td class="">{{c.data.item.title}}</td>
+              </tr>
+              <tr>
+                <th class="">Medium</th>
+                <td class="">{{c.data.item.medium}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+	      <!-- Value -->
+        <div class="column">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="is-size-5 has-text-link" colspan="2">Value</th> 
+              </tr>
+              <tr>
+                <th class="">Estimated Value</th>
+                <td class="has-text-right">{{c.data.item.estimated_value}}</td>
+              </tr>
+              <tr>
+                <th class="">Ticket Price</th>
+                <td class="has-text-right">{{c.data.item.ticket_price}}</td>
+              </tr>
+              <tr>
+                <th class="">Purchase Price</th>
+                <td class="has-text-right">{{c.data.item.purchase_price}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Style/Period -->
+        <div class="column">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="is-size-5 has-text-link" colspan="2">Style</th> 
+              </tr>
+              <tr>
+                <th class="">Period</th>
+                <td class="">{{c.data.item.time_period}}</td>
+              </tr>
+              <tr>
+                <th class="">Origin</th>
+                <td class="">{{c.data.item.origin}}</td>
+              </tr>
+              <tr>
+                <th class="">Style</th>
+                <td class="">{{c.data.item.style}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <!-- Physical -->
+        <div class="column">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th class="is-size-5 has-text-link" colspan="2">Physical</th> 
+              </tr>
+              <tr>
+                <th class="">Color</th>
+                <td class="">{{c.data.item.primary_color}}</td>
+              </tr>
+              <tr ng-show="c.data.item.length > 0">
+                <th class="">Length</th>
+                <td class="has-text-right">{{c.data.item.length}}</td>
+              </tr>
+              <tr>
+                <th class="">Width</th>
+                <td class="has-text-right">{{c.data.item.width}}</td>
+              </tr>
+              <tr>
+                <th class="">Height</th>
+                <td class="has-text-right">{{c.data.item.height}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>      
+    </div>            
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

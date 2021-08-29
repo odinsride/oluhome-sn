@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="Base Collection Item" max_length="40" name="x_656683_oluhome_base_collection_item" sizeclass="1" type="collection">
+    <element audit="true" label="Base Collection Item" max_length="40" name="x_656683_oluhome_base_collection_item" sizeclass="6" type="collection">
         <element label="Appraisal date" max_length="40" name="appraisal_date" type="glide_date"/>
         <element label="Appraisal value" max_length="20" name="appraisal_value" type="currency"/>
         <element label="Appraised?" max_length="40" name="appraised" type="boolean"/>
@@ -15,8 +15,6 @@
         <element label="Photo" max_length="40" name="photo" type="user_image"/>
         <element choice="2" label="Primary color" max_length="40" name="primary_color" type="string">
             <choice>
-                <element inactive_on_update="false" label="Brown"/>
-                <element inactive_on_update="false" label="Green"/>
                 <element inactive_on_update="false" label="Orange"/>
                 <element inactive_on_update="false" label="Pink"/>
                 <element inactive_on_update="false" label="Purple"/>
@@ -24,12 +22,15 @@
                 <element inactive_on_update="false" label="White"/>
                 <element inactive_on_update="false" label="Yellow"/>
                 <element inactive_on_update="false" label="Black" sequence="0"/>
-                <element inactive="true" inactive_on_update="true" label="Black" sequence="0"/>
+                <element inactive_on_update="false" label="Brown" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Brown" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Brown" sequence="0"/>
             </choice>
         </element>
         <element label="Provenance notes" max_length="1000" name="provenance_notes" type="string"/>
         <element label="Purchase date" max_length="40" name="purchase_date" type="glide_date"/>
         <element label="Purchase price" max_length="20" name="purchase_price" type="currency"/>
+        <element label="Record Completeness" max_length="15" name="record_completeness" type="percent_complete"/>
         <element label="Restoration notes" max_length="1000" name="restoration_notes" type="string"/>
         <element label="Self-appraisal value" max_length="20" name="self_appraisal_value" type="currency"/>
         <element label="Seller" max_length="32" name="seller" reference="core_company" type="reference"/>

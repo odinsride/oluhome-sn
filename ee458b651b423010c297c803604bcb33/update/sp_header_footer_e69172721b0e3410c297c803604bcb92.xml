@@ -5,10 +5,16 @@
   /* widget controller */
   var c = this;
 	
-	console.log(c.data.collectionClasses);
+	//console.log(c.data.collectionClasses);
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>#main-nav {
+  margin-bottom: 0;
+}
+
+#secondary-nav {
+  
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -36,7 +42,10 @@
 	grClasses.groupBy('sys_class_name');
 	grClasses.query();
 	while(grClasses.next()) {
-		data.collectionClasses.push(grClasses.sys_class_name.getDisplayValue());
+		var collectionClass = {};
+		collectionClass.display_name = grClasses.sys_class_name.getDisplayValue();
+		collectionClass.sys_table = grClasses.getValue('sys_class_name');
+		data.collectionClasses.push(collectionClass);
 	}
 	
 })();]]></script>
@@ -46,46 +55,36 @@
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 11:36:56</sys_created_on>
         <sys_id>e69172721b0e3410c297c803604bcb92</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>67</sys_mod_count>
         <sys_name>oluhome Header</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_header_footer_e69172721b0e3410c297c803604bcb92</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-08-22 11:54:13</sys_updated_on>
-        <template><![CDATA[<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="#">
-      <h2 class="title">
-        oluhome
-      </h2>
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" ng-repeat="class in c.data.collectionClasses">
-        {{ class }}
+        <sys_updated_on>2021-08-28 23:22:01</sys_updated_on>
+        <template><![CDATA[<nav class="navbar is-radiusless" id="main-nav" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">
+        <h2 class="title is-family-sans-serif has-text-link has-text-weight-bold">
+          oluhome
+        </h2>
       </a>
     </div>
+  </div>
+</nav>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
-        <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
-          </a>
-        </div>
+<nav class="navbar is-radiusless is-link has-shadow has-text-weight-bold is-family-sans-serif" id="secondary-nav" role="navigation" aria-label="secondary navigation">
+  <div class="container">
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a ng-href="/oluhome" class="navbar-item has-text-white">
+          Dashboard
+        </a>
+        <a ng-href="?id=oluhome_collection&sys_table={{class.sys_table}}" class="navbar-item has-text-white" ng-repeat="class in c.data.collectionClasses">
+          {{ class.display_name }}
+        </a>
       </div>
     </div>
   </div>

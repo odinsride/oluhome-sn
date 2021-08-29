@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="" extends="x_656683_oluhome_base_collection_item" table="x_656683_oluhome_furniture">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="record_completeness" table="x_656683_oluhome_base_collection_item">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label/>
+        <column_label>Record Completeness</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element/>
+        <element>record_completeness</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="">percent_complete</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_656683_oluhome_furniture</name>
+        <max_length>15</max_length>
+        <name>x_656683_oluhome_base_collection_item</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -47,21 +47,21 @@
         <reference_qual/>
         <reference_qual_condition/>
         <reference_type/>
-        <sizeclass>1</sizeclass>
+        <sizeclass/>
         <spell_check>false</spell_check>
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
-        <sys_created_on>2021-08-21 23:58:21</sys_created_on>
-        <sys_id>90c158f61b823410c297c803604bcbd4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>x_656683_oluhome_furniture</sys_name>
+        <sys_created_on>2021-08-29 10:44:26</sys_created_on>
+        <sys_id>598826411b527c10c297c803604bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Record Completeness</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
-        <sys_update_name>sys_dictionary_x_656683_oluhome_furniture_null</sys_update_name>
-        <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2021-08-29 10:28:44</sys_updated_on>
+        <sys_update_name>sys_dictionary_x_656683_oluhome_base_collection_item_record_completeness</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-29 10:44:26</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

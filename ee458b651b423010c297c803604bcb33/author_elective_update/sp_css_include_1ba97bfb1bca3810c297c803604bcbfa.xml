@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include">
+    <sp_css_include action="DELETE">
+        <name>Bulma Variables</name>
+        <source>local</source>
+        <sp_css display_value="oluhome-bulma-vars.css">a0b9b33f1bca3810c297c803604bcba9</sp_css>
+        <sys_class_name>sp_css_include</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:25:55</sys_created_on>
+        <sys_id>1ba97bfb1bca3810c297c803604bcbfa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulma Variables</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_css_include_1ba97bfb1bca3810c297c803604bcbfa</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:25:55</sys_updated_on>
+        <url/>
+    </sp_css_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sp_css_include_1ba97bfb1bca3810c297c803604bcbfa</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_css_include"><sp_css_include action="INSERT_OR_UPDATE"><name>Bulma Variables</name><source>local</source><sp_css display_value="oluhome-bulma-vars.css">a0b9b33f1bca3810c297c803604bcba9</sp_css><sys_class_name>sp_css_include</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-08-25 19:25:55</sys_created_on><sys_id>1ba97bfb1bca3810c297c803604bcbfa</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Bulma Variables</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sp_css_include_1ba97bfb1bca3810c297c803604bcbfa</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-08-25 19:25:55</sys_updated_on><url/></sp_css_include></record_update>]]></payload>
+        <payload_hash>1954193312</payload_hash>
+        <record_name>Bulma Variables</record_name>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:25:55</sys_created_on>
+        <sys_id>24c9bbfb1bca3810c297c803604bcbab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17b7ec6ae000000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:25:55</sys_updated_on>
+        <type>CSS Include</type>
+        <update_guid>6cc9bbfb23ca3810e1f26097225203aa</update_guid>
+        <update_guid_history>6cc9bbfb23ca3810e1f26097225203aa:1954193312</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Bulma Variables">95fbf7bf1bca3810c297c803604bcb72</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-08-25 19:35:31</sys_created_on>
+        <sys_db_object display_value="" name="sp_css_include">sp_css_include</sys_db_object>
+        <sys_id>209ac35887e84cc89baaa74e267ed584</sys_id>
+        <sys_metadata>1ba97bfb1bca3810c297c803604bcbfa</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Bulma Variables</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sp_css_include_1ba97bfb1bca3810c297c803604bcbfa</sys_update_name>
+        <sys_update_version display_value="sp_css_include_1ba97bfb1bca3810c297c803604bcbfa">24c9bbfb1bca3810c297c803604bcbab</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-08-25 19:35:31</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

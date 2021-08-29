@@ -6,14 +6,51 @@
   var c = this;
 };]]></client_script>
         <controller_as>c</controller_as>
-        <css>.card {
+        <css>.level {
+	.level-item {
+    margin-right: 2rem;
+  }
+}
+
+.card {
   transition: all 0.2s ease;
+  border-radius: 5px;
   
   &amp;:hover {
     transform: translate3D(0,-1px,0) scale(1.03); /* move up slightly and zoom in */
     box-shadow: 8px 28px 50px rgba(39,44,49,.07), 1px 6px 12px rgba(39,44,49,.04);
     transition: all 0.2s ease; /* zoom in */
     cursor: pointer; 
+  }
+  
+  .is-overlay {
+  	background: rgba(0,0,0,.5);
+    height: 35%;
+    top: unset;
+  }
+  
+  .card-image {
+    border-radius: 5px;
+    
+    .image {
+      border-radius: 5px;
+      
+      img {
+        border-radius: 5px;
+			  object-fit: cover;
+      }
+    }
+  }
+  
+  .card-content {
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+  	.title {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
   }
 }</css>
         <data_table>sp_instance</data_table>
@@ -37,7 +74,17 @@
 
 	data.items = [];
 	data.table = $sp.getParameter('sys_table') || 'x_656683_oluhome_base_collection_item';
+	data.collection_count = 0;
+	data.collection_value = 0;
 	
+	// Get collection name
+	var grTable = new GlideRecord('sys_db_object');
+	grTable.addQuery('name', data.table);
+	grTable.query();
+	if (grTable.next())
+		data.collection_name = grTable.getValue('label') || 'Collection';
+	
+	// Get items
 	var grItem = new GlideRecord(data.table);
 	grItem.orderBy('number');
 	grItem.query();
@@ -51,43 +98,80 @@
 		itemObj.sys_id = grItem.getValue('sys_id');
 		itemObj.number = grItem.getDisplayValue('number');
 		
+		data.collection_count += 1;
+		data.collection_value += parseFloat(grItem.getValue('estimated_value'));
+		
 		data.items.push(itemObj);
 	}
+	
+	// Format collection value
+	data.collection_value = formatNumber(parseInt(data.collection_value));
+	
+	function formatNumber(number) {
+		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");     // Insert commas at correct position
+	}
+	
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 13:33:28</sys_created_on>
         <sys_id>b04c03ba1b4e3410c297c803604bcb24</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>oluhome Item Grid</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_widget_b04c03ba1b4e3410c297c803604bcb24</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-08-23 00:55:20</sys_updated_on>
+        <sys_updated_on>2021-08-25 20:10:57</sys_updated_on>
         <template><![CDATA[<div class="container">
-<div class="columns is-multiline">
-  <div class="column is-one-third" ng-repeat="item in c.data.items track by item.sys_id">
-    <div class="card">
-      <div class="card-image">
-        <figure class="image is-4by3">
-          <img src="{{item.image}}" alt="{{item.description}}">
-        </figure>
+  <h2 class="title has-text-link is-2">
+    {{ c.data.collection_name }}
+  </h2>
+  <div class="level is-family-sans-serif">
+    <div class="level-left">
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">
+            Collection Value
+          </p>
+          <p class="title">
+            ${{ c.data.collection_value }}
+          </p>                    
+        </div>
       </div>
-      <div class="card-content">
-        <p class="text-muted text-sm">{{item.number}}</p>
-        <p class="title is-4">{{item.description}}</p>
-        <p class="subtitle is-5">{{item.value}}</p>
-        <div class="content" ng-bind-html="item.notes">
+      
+      <div class="level-item has-text-centered">
+        <div>
+          <p class="heading">
+            Items
+          </p>
+          <p class="title">
+            {{ c.data.collection_count }}
+          </p>                    
         </div>
       </div>
     </div>
   </div>
-</div>
-</div>
-                                                      
-                                                      </div>]]></template>
+  <div class="columns is-multiline">
+    <div class="column is-one-third-fullhd is-half-tablet" ng-repeat="item in c.data.items track by item.sys_id">
+      <a ng-href="?id=oluhome_collection_item&sys_id={{item.sys_id}}">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="{{item.image}}" alt="{{item.description}}">
+            </figure>
+          </div>
+          <div class="card-content is-overlay">
+            <p class="has-text-white text-sm is-family-sans-serif">{{item.number}}</p>
+            <p class="title is-5 has-text-white">{{item.description}}</p>
+            <p class="subtitle is-6 has-text-white is-family-sans-serif">{{item.value}}</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>]]></template>
     </sp_widget>
 </record_update>
