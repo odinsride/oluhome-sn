@@ -19,7 +19,19 @@
 	
 	c.discountClass = function(discount) {
 		if (discount > 0) {
-			return 'has-text-success';
+			return 'has-text-success has-text-weight-bold';
+		}
+	}
+	
+	c.progressClass = function(progress) {
+		if (progress > 90) {
+			return 'is-success';
+		}
+		else if (progress > 30) {
+			return 'is-warning';
+		}
+		else {
+			return 'is-danger';
 		}
 	}
 };]]></client_script>
@@ -50,6 +62,10 @@ figure.image {
   img {
     border-radius: 5px;
   }
+}
+
+.progress-div {
+  margin-top: 1rem;
 }
 
 .table {
@@ -84,6 +100,16 @@ p {
 .image.is-square {
   img {
   	object-fit: cover;
+  }
+}
+
+.documents {
+  ul {
+    list-style: none;
+  }
+  
+  i {
+    margin-right: 12px;
   }
 }
 
@@ -136,6 +162,7 @@ p {
 		item.updated_by = grItem.getDisplayValue('sys_updated_by');
 		item.purchase_date = grItem.getDisplayValue('purchase_date');
 		item.seller = grItem.getDisplayValue('seller');
+		item.completeness = grItem.getValue('record_completeness');
 		
 		// Valuation
 		item.purchase_price = grItem.getDisplayValue('purchase_price');
@@ -210,14 +237,14 @@ p {
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-23 19:35:53</sys_created_on>
         <sys_id>13c8e55b1b46b410c297c803604bcb0c</sys_id>
-        <sys_mod_count>240</sys_mod_count>
+        <sys_mod_count>277</sys_mod_count>
         <sys_name>oluhome Item Detail</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_widget_13c8e55b1b46b410c297c803604bcb0c</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-08-29 10:41:52</sys_updated_on>
+        <sys_updated_on>2021-09-04 11:30:21</sys_updated_on>
         <template><![CDATA[<div class="box">
 <!-- your widget template -->
   <div class="level">
@@ -239,7 +266,7 @@ p {
           <h4 class="text-muted has-text-right-tablet has-text-centered-mobile is-family-sans-serif has-text-weight-bold">
             Value
           </h4>
-          <h2 class="title is-2 has-text-success-dark">
+          <h2 class="title is-2 has-text-success">
             {{ c.data.item.estimated_value }}
           </h2>
         </div>
@@ -275,6 +302,10 @@ p {
               <tr>
                 <th class="">Seller</th>
                 <td class="">{{c.data.item.seller}}</td>
+              </tr>
+              <tr>
+              	<th class="">Purchase Date</th>
+                <td class="">{{c.data.item.purchase_date}}</td>
               </tr>
               <tr>
                 <th class="">Ticket Price</th>
@@ -314,30 +345,6 @@ p {
       <p ng-bind-html="c.data.item.restoration_notes"></p>
     </div>            
     
-    <!-- Photos -->
-    <div class="block" ng-show="c.data.imageAttachments.length > 0">
-      <h3 class="title is-4">
-      	Additional Photos
-      </h3>
-      <div class="columns is-multiline">
-        <div class="column is-one-third-tablet is-one-fifth-desktop" ng-repeat="image in c.data.imageAttachments track by image.sys_id">
-          <figure class="image is-square" ng-click="c.showModal(image.sys_id)">
-            <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" />
-          </figure>
-
-          <div id="modal_{{image.sys_id}}" class="modal">
-            <div class="modal-background" ng-click="c.closeModal(image.sys_id)"></div>
-            <div class="modal-content">
-              <p class="image">
-                <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" alt="">
-              </p>
-            </div>
-            <button class="modal-close is-large" ng-click="c.closeModal(image.sys_id)" aria-label="close"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     <!-- Item Details -->
     <div class="block">
       <h3 class="title is-4">
@@ -364,29 +371,6 @@ p {
               <tr>
                 <th class="">Medium</th>
                 <td class="">{{c.data.item.medium}}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-  
-	      <!-- Value -->
-        <div class="column">
-          <table class="table">
-            <tbody>
-              <tr>
-                <th class="is-size-5 has-text-link" colspan="2">Value</th> 
-              </tr>
-              <tr>
-                <th class="">Estimated Value</th>
-                <td class="has-text-right">{{c.data.item.estimated_value}}</td>
-              </tr>
-              <tr>
-                <th class="">Ticket Price</th>
-                <td class="has-text-right">{{c.data.item.ticket_price}}</td>
-              </tr>
-              <tr>
-                <th class="">Purchase Price</th>
-                <td class="has-text-right">{{c.data.item.purchase_price}}</td>
               </tr>
             </tbody>
           </table>
@@ -442,7 +426,79 @@ p {
           </table>
         </div>
       </div>      
-    </div>            
+    </div>
+    
+    <!-- Photos -->
+    <div class="block" ng-show="c.data.imageAttachments.length > 0">
+      <h3 class="title is-4">
+      	Additional Photos
+      </h3>
+      <div class="columns is-multiline">
+        <div class="column is-one-third-tablet is-one-fifth-desktop" ng-repeat="image in c.data.imageAttachments track by image.sys_id">
+          <figure class="image is-square" ng-click="c.showModal(image.sys_id)">
+            <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" />
+          </figure>
+
+          <div id="modal_{{image.sys_id}}" class="modal">
+            <div class="modal-background" ng-click="c.closeModal(image.sys_id)"></div>
+            <div class="modal-content">
+              <p class="image">
+                <img src="/sys_attachment.do?sys_id={{image.sys_id}}&view=true" alt="">
+              </p>
+            </div>
+            <button class="modal-close is-large" ng-click="c.closeModal(image.sys_id)" aria-label="close"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signature -->
+    <div class="block" ng-show="c.data.item.signed">
+      <h3 class="title is-4">
+        Signature
+      </h3>
+      
+      <div class="columns">
+      	<div class="column is-one-third-tablet">
+          <figure class="image" ng-click="c.showModal(c.data.item_id + '_signature')">
+            <img ng-src="{{c.data.item.signature}}" alt="Signature" />
+          </figure>
+          
+          <div id="modal_{{c.data.item_id}}_signature" class="modal">
+            <div class="modal-background" ng-click="c.closeModal(c.data.item_id + '_signature')"></div>
+            <div class="modal-content">
+              <p class="image">
+                <img src="{{c.data.item.signature}}" alt="Signature">
+              </p>
+            </div>
+            <button class="modal-close is-large" ng-click="c.closeModal(c.data.item_id + '_signature')" aria-label="close"></button>
+          </div>
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Documents -->
+    <div class="block documents" ng-show="c.data.fileAttachments.length > 0">
+      <h3 class="title is-4">
+      	Documents
+      </h3>
+      <ul>
+        <li ng-repeat="file in c.data.fileAttachments track by file.sys_id">
+        	<i class="fa fa-file-pdf-o has-text-danger" aria-hidden="true"></i>
+          <a href="/sys_attachment.do?sys_id={{file.sys_id}}&view=true" class="has-text-weight-bold">
+          	{{file.file_name}}
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Progress -->
+    <div class="block">
+      <div class="progress-div has-text-centered">
+        <span class="is-family-sans-serif has-text-weight-bold">Record Completeness ({{c.data.item.completeness}}%)</span>
+        <progress class="progress" ng-class="c.progressClass(c.data.item.completeness)" value="{{c.data.item.completeness}}" max="100">{{c.data.item.completeness}}%</progress>
+      </div>
+    </div>
   </div>
 </div>]]></template>
     </sp_widget>
