@@ -38,7 +38,7 @@
         <element label="Signature" max_length="40" name="signature" type="user_image"/>
         <element label="Signed?" max_length="40" name="signed" type="boolean"/>
         <element label="Style" max_length="40" name="style" type="string"/>
-        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element label="Ticket price" max_length="20" name="ticket_price" type="currency"/>
         <element label="Time period" max_length="40" name="time_period" type="string"/>
         <element label="Width" max_length="20" name="width" type="decimal"/>
