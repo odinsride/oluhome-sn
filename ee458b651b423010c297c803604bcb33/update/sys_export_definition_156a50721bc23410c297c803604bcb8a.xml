@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_export_definition">
     <sys_export_definition action="INSERT_OR_UPDATE">
-        <field_list>purchase_date,estimated_value,sys_class_name,sys_updated_by,origin,purchase_price,number,sys_updated_on,short_description,time_period,appraisal_date,appraisal_value,appraised,sys_created_on,sys_created_by,height,known_provenance,known_restorations,length,maker,notes,photo,primary_color,provenance_notes,restoration_notes,seller,signature,signed,style,sys_id,sys_tags,ticket_price,sys_mod_count,width,ref_x_656683_oluhome_art.artist,ref_x_656683_oluhome_furniture.furniture_type,ref_x_656683_oluhome_furniture.materials,ref_x_656683_oluhome_art.medium,ref_x_656683_oluhome_art.title</field_list>
+        <field_list>number,short_description,purchase_date,estimated_value,sys_class_name,sys_updated_by,origin,purchase_price,sys_updated_on,time_period,appraisal_date,appraisal_value,appraised,sys_created_on,sys_created_by,height,known_provenance,known_restorations,length,maker,notes,photo,primary_color,provenance_notes,restoration_notes,seller,signature,signed,style,sys_id,sys_tags,ticket_price,sys_mod_count,width,ref_x_656683_oluhome_art.artist,ref_x_656683_oluhome_furniture.furniture_type,ref_x_656683_oluhome_furniture.materials,ref_x_656683_oluhome_art.medium,ref_x_656683_oluhome_art.title,record_completeness,self_appraisal_value</field_list>
         <filter/>
         <name>oluhome export</name>
         <sys_class_name>sys_export_definition</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 00:36:33</sys_created_on>
         <sys_id>156a50721bc23410c297c803604bcb8a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>oluhome export</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sys_export_definition_156a50721bc23410c297c803604bcb8a</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-08-22 00:36:33</sys_updated_on>
+        <sys_updated_on>2021-10-19 11:38:06</sys_updated_on>
         <table_name>x_656683_oluhome_base_collection_item</table_name>
         <view display_value="Exp_d156a50721bc23410c297c803604bcb8a" name="exp_d156a50721bc23410c297c803604bcb8a">f37a90721bc23410c297c803604bcb26</view>
     </sys_export_definition>

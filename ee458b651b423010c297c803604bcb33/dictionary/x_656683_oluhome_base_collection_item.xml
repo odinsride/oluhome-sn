@@ -33,7 +33,7 @@
         <element label="Record Completeness" max_length="15" name="record_completeness" type="percent_complete"/>
         <element label="Restoration notes" max_length="1000" name="restoration_notes" type="string"/>
         <element label="Self-appraisal value" max_length="20" name="self_appraisal_value" type="currency"/>
-        <element label="Seller" max_length="32" name="seller" reference="core_company" type="reference"/>
+        <element label="Seller" max_length="32" name="seller" reference="x_656683_oluhome_vendors" type="reference"/>
         <element label="Short description" max_length="100" name="short_description" type="string"/>
         <element label="Signature" max_length="40" name="signature" type="user_image"/>
         <element label="Signed?" max_length="40" name="signed" type="boolean"/>

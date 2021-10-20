@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="seller" table="x_656683_oluhome_base_collection_item">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="phone_number" table="x_656683_oluhome_vendors">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes/>
+        <attributes>pn_display_territory_selector=false,pn_display_territory_text=all</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -14,7 +14,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Seller</column_label>
+        <column_label>Phone number</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -27,20 +27,20 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>seller</element>
+        <element>phone_number</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="">phone_number_e164</internal_type>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
-        <name>x_656683_oluhome_base_collection_item</name>
+        <max_length>40</max_length>
+        <name>x_656683_oluhome_vendors</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="x_656683_oluhome_vendors">x_656683_oluhome_vendors</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -52,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
-        <sys_created_on>2021-08-20 21:01:53</sys_created_on>
-        <sys_id>054f1e9a1b0eb010c297c803604bcb7f</sys_id>
+        <sys_created_on>2021-10-20 10:33:13</sys_created_on>
+        <sys_id>d2685e391b933410c297c803604bcb72</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_name>Seller</sys_name>
+        <sys_name>Phone number</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
-        <sys_update_name>sys_dictionary_x_656683_oluhome_base_collection_item_seller</sys_update_name>
+        <sys_update_name>sys_dictionary_x_656683_oluhome_vendors_phone_number</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-10-20 11:51:06</sys_updated_on>
+        <sys_updated_on>2021-10-20 10:56:56</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
