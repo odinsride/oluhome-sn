@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Vendors" max_length="40" name="x_656683_oluhome_vendors" sizeclass="0" type="collection">
+    <element label="Vendors" max_length="40" name="x_656683_oluhome_vendors" sizeclass="7" type="collection">
         <element label="City" max_length="50" name="city" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Country" max_length="100" name="country" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Email" max_length="100" name="email" type="string"/>
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Notes" max_length="1000" name="notes" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Owner / contact" max_length="100" name="owner_contact" type="string"/>
@@ -9,5 +11,6 @@
         <element label="State" max_length="40" name="state" type="string"/>
         <element label="Street" max_length="500" name="street" type="string"/>
         <element label="Website" max_length="1024" name="website" type="url"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Zip code" max_length="10" name="zip_code" type="string"/>
     </element>
 </database>
