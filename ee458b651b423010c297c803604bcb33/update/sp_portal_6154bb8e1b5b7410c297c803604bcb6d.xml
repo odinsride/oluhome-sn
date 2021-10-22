@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
+    <sp_portal action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary:#3f8073;
+$body-bg:#ffffff;
+$state-success-text:#1e4335;
+$sp-homepage-bg:#fff;
+$sp-navbar-divider-color:#bdc0c4;
+$text-color:#2e2e2e;
+$sp-logo-margin-y:.5rem;
+$navbar-inverse-link-hover-color:#ffffff;
+$panel-bg:#fff;
+$brand-success:#48C891;
+$navbar-inverse-bg:#ffffff;
+$brand-warning:#DFD139;
+$brand-danger:#C83C36;
+$sp-tagline-color:#ffffff;
+$navbar-inverse-link-color:#3f8073;
+$brand-info:#4eb78b;
+$link-color:#4eb78b;
+$sp-logo-margin-x:15px;
+$btn-default-bg:#fff;
+$text-muted:#666666;
+</css_variables>
+        <default>false</default>
+        <enable_ais>false</enable_ais>
+        <hide_portal_name>false</hide_portal_name>
+        <homepage display_value="oluhome_landing">39f7bf8e1b5b7410c297c803604bcb8a</homepage>
+        <icon/>
+        <kb_knowledge_base/>
+        <kb_knowledge_page display_value="kb_home">e1c919e4dbd3220099f93691f0b8f535</kb_knowledge_page>
+        <login_page/>
+        <logo/>
+        <notfound_page/>
+        <quick_start_config/>
+        <sc_catalog/>
+        <sc_catalog_page/>
+        <sc_category_page/>
+        <search_application/>
+        <search_results_configuration/>
+        <sp_chat_queue/>
+        <sp_rectangle_menu display_value="SP Header Menu">d150fd31cb10020000f8d856634c9ce6</sp_rectangle_menu>
+        <sys_class_name>sp_portal</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-21 11:51:42</sys_created_on>
+        <sys_id>6154bb8e1b5b7410c297c803604bcb6d</sys_id>
+        <sys_mod_count>42</sys_mod_count>
+        <sys_name>oluhome</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_portal_6154bb8e1b5b7410c297c803604bcb6d</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-22 11:49:06</sys_updated_on>
+        <theme display_value="oluhome">e2297fc21b9b7410c297c803604bcb03</theme>
+        <title>oluhome</title>
+        <ts_index_group/>
+        <url_suffix>oluhome</url_suffix>
+    </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=6154bb8e1b5b7410c297c803604bcb6d"/>
+</record_update>

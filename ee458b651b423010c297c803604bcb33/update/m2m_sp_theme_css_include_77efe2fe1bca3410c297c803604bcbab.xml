@@ -2,7 +2,7 @@
     <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
         <order>55</order>
         <sp_css_include display_value="Bulma">ae03e2f21bca3410c297c803604bcb03</sp_css_include>
-        <sp_theme display_value="oluhome">d1c26eb21bca3410c297c803604bcbcf</sp_theme>
+        <sp_theme display_value="oluhome Bulma">d1c26eb21bca3410c297c803604bcbcf</sp_theme>
         <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 11:29:27</sys_created_on>

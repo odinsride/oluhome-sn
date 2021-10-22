@@ -4,7 +4,7 @@
         <id_parameter>sys_table</id_parameter>
         <source_field>label</source_field>
         <source_table>sys_db_object</source_table>
-        <sp_page display_value="oluhome_collection">01fadbf61b8e3410c297c803604bcb3c</sp_page>
+        <sp_page display_value="oluhome_collection_bulma">01fadbf61b8e3410c297c803604bcb3c</sp_page>
         <sys_class_name>sp_page_title_variable</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 14:38:39</sys_created_on>

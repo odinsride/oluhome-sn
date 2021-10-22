@@ -6,7 +6,7 @@
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Notes" max_length="1000" name="notes" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Owner / contact" max_length="100" name="owner_contact" type="string"/>
-        <element attributes="pn_display_territory_selector=false,pn_display_territory_text=all" label="Phone number" max_length="40" name="phone_number" type="phone_number_e164"/>
+        <element attributes="pn_display_territory_selector=false" label="Phone number" max_length="40" name="phone_number" type="phone_number_e164"/>
         <element label="Prospect?" max_length="40" name="prospect" type="boolean"/>
         <element label="State" max_length="40" name="state" type="string"/>
         <element label="Street" max_length="500" name="street" type="string"/>

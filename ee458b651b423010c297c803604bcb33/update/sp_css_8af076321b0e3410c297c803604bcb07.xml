@@ -10,18 +10,18 @@ body {&#13;
 .is-family-sans-serif {&#13;
   font-family: $font-sans-serif !important;&#13;
 }</css>
-        <name>oluhome-base.css</name>
+        <name>oluhome-base-bulma.css</name>
         <sys_class_name>sp_css</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-22 11:34:23</sys_created_on>
         <sys_id>8af076321b0e3410c297c803604bcb07</sys_id>
-        <sys_mod_count>20</sys_mod_count>
-        <sys_name>oluhome-base.css</sys_name>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>oluhome-base-bulma.css</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_css_8af076321b0e3410c297c803604bcb07</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-08-25 20:00:56</sys_updated_on>
+        <sys_updated_on>2021-10-21 11:50:46</sys_updated_on>
     </sp_css>
 </record_update>

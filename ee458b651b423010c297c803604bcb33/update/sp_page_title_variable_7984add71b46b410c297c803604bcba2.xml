@@ -4,7 +4,7 @@
         <id_parameter>sys_id</id_parameter>
         <source_field>short_description</source_field>
         <source_table>x_656683_oluhome_base_collection_item</source_table>
-        <sp_page display_value="oluhome_collection_item">d944a51b1b46b410c297c803604bcb8f</sp_page>
+        <sp_page display_value="oluhome_collection_item_bulma">d944a51b1b46b410c297c803604bcb8f</sp_page>
         <sys_class_name>sp_page_title_variable</sys_class_name>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-23 19:17:25</sys_created_on>

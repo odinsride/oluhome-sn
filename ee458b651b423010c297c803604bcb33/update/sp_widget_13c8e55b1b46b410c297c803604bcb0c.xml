@@ -124,12 +124,12 @@ p {
         <docs/>
         <field_list/>
         <has_preview>false</has_preview>
-        <id>oluhome-item-detail</id>
+        <id>oluhome-item-detail-bulma</id>
         <internal>false</internal>
         <link><![CDATA[function link(scope, element, attrs, controller) {
   
 }]]></link>
-        <name>oluhome Item Detail</name>
+        <name>oluhome Item Detail Bulma</name>
         <option_schema/>
         <public>false</public>
         <roles/>
@@ -237,14 +237,14 @@ p {
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-08-23 19:35:53</sys_created_on>
         <sys_id>13c8e55b1b46b410c297c803604bcb0c</sys_id>
-        <sys_mod_count>277</sys_mod_count>
-        <sys_name>oluhome Item Detail</sys_name>
+        <sys_mod_count>278</sys_mod_count>
+        <sys_name>oluhome Item Detail Bulma</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_widget_13c8e55b1b46b410c297c803604bcb0c</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-09-04 11:30:21</sys_updated_on>
+        <sys_updated_on>2021-10-21 11:49:46</sys_updated_on>
         <template><![CDATA[<div class="box">
 <!-- your widget template -->
   <div class="level">
