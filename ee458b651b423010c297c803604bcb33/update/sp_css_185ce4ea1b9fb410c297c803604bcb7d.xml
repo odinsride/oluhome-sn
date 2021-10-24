@@ -5,14 +5,19 @@
 }&#13;
 &#13;
 section.page {&#13;
-  margin-top: 1rem;&#13;
-  margin-bottom: 1rem;&#13;
+  padding-top: 1rem;&#13;
+  padding-bottom: 1rem;&#13;
+}&#13;
+&#13;
+header {&#13;
+  -webkit-box-shadow: 0px 3px 21px -6px rgba(0,0,0,0.5); &#13;
+	box-shadow: 0px 3px 21px -6px rgba(0,0,0,0.5);&#13;
 }&#13;
 &#13;
 @media (min-width: 640px) {&#13;
   section.page {&#13;
-    margin-top: $page-margin-y;&#13;
-    margin-bottom: $page-margin-y;&#13;
+    padding-top: $page-margin-y;&#13;
+    padding-bottom: $page-margin-y;&#13;
   }&#13;
 &#13;
   // custom padding to left and right of fluid container (variable set in La Pflantz theme)&#13;
@@ -35,13 +40,13 @@ section.page {&#13;
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-10-22 10:34:41</sys_created_on>
         <sys_id>185ce4ea1b9fb410c297c803604bcb7d</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>oluhome-main.css</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_css_185ce4ea1b9fb410c297c803604bcb7d</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-10-22 11:06:45</sys_updated_on>
+        <sys_updated_on>2021-10-22 16:13:06</sys_updated_on>
     </sp_css>
 </record_update>

@@ -12,11 +12,10 @@
         <element label="Notes" max_length="8000" name="notes" type="html"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Origin" max_length="40" name="origin" type="string"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Payment plan" max_length="32" name="payment_plan" reference="x_656683_oluhome_payment_plan" type="reference"/>
         <element label="Photo" max_length="40" name="photo" type="user_image"/>
         <element choice="2" label="Primary color" max_length="40" name="primary_color" type="string">
             <choice>
-                <element inactive_on_update="false" label="Orange"/>
-                <element inactive_on_update="false" label="Pink"/>
                 <element inactive_on_update="false" label="Purple"/>
                 <element inactive_on_update="false" label="Red"/>
                 <element inactive_on_update="false" label="White"/>
@@ -24,7 +23,9 @@
                 <element inactive_on_update="false" label="Black" sequence="0"/>
                 <element inactive_on_update="false" label="Brown" sequence="0"/>
                 <element inactive="true" inactive_on_update="true" label="Brown" sequence="0"/>
-                <element inactive="true" inactive_on_update="true" label="Brown" sequence="0"/>
+                <element inactive_on_update="false" label="Orange" sequence="0"/>
+                <element inactive_on_update="false" label="Orange" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Orange" sequence="0"/>
             </choice>
         </element>
         <element label="Provenance notes" max_length="1000" name="provenance_notes" type="string"/>
@@ -37,6 +38,12 @@
         <element label="Short description" max_length="100" name="short_description" type="string"/>
         <element label="Signature" max_length="40" name="signature" type="user_image"/>
         <element label="Signed?" max_length="40" name="signed" type="boolean"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Payment status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In payment" sequence="200" value="in_payment"/>
+                <element inactive_on_update="false" label="Paid" sequence="300" value="paid"/>
+            </choice>
+        </element>
         <element label="Style" max_length="40" name="style" type="string"/>
         <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
         <element label="Ticket price" max_length="20" name="ticket_price" type="currency"/>
@@ -46,6 +53,9 @@
             <element name="seller"/>
         </index>
         <index name="index2">
+            <element name="payment_plan"/>
+        </index>
+        <index name="index3">
             <element name="sys_class_name"/>
         </index>
     </element>

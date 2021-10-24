@@ -169,11 +169,11 @@ $font-primary: Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI"
 &#13;
 // Padding &amp; Spacing&#13;
 /* Pages */&#13;
-$page-margin-y: 5rem;&#13;
+$page-margin-y: 1rem;&#13;
 &#13;
 /* Containers */&#13;
 $fluid-container-padding: 2em;&#13;
-$fluid-container-max-width: 1800px;</css_variables>
+$fluid-container-max-width: 1200px;</css_variables>
         <footer/>
         <footer_fixed>true</footer_fixed>
         <header display_value="oluhome Header">50ddf4ae1bdfb410c297c803604bcb28</header>
@@ -183,13 +183,13 @@ $fluid-container-max-width: 1800px;</css_variables>
         <sys_created_by>kcuster</sys_created_by>
         <sys_created_on>2021-10-21 12:13:05</sys_created_on>
         <sys_id>e2297fc21b9b7410c297c803604bcb03</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name>oluhome</sys_name>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
         <sys_policy/>
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sp_theme_e2297fc21b9b7410c297c803604bcb03</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-10-22 11:51:30</sys_updated_on>
+        <sys_updated_on>2021-10-22 16:04:51</sys_updated_on>
     </sp_theme>
 </record_update>

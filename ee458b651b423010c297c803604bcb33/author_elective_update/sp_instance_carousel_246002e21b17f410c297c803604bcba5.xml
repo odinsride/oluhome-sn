@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_carousel">
+    <sp_instance_carousel action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <interval>5000</interval>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">c10833ce1b5b7410c297c803604bcb31</sp_column>
+        <sp_widget display_value="Carousel">cf1a5153cb21020000f8d856634c9c3c</sp_widget>
+        <sys_class_name>sp_instance_carousel</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-22 16:41:42</sys_created_on>
+        <sys_id>246002e21b17f410c297c803604bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sp_instance_carousel_246002e21b17f410c297c803604bcba5</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-22 16:41:42</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_carousel>
+    <sys_translated_text action="DELETE" query="documentkey=246002e21b17f410c297c803604bcba5"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sp_instance_carousel_246002e21b17f410c297c803604bcba5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_carousel"><sp_instance_carousel action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><interval>5000</interval><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">c10833ce1b5b7410c297c803604bcb31</sp_column><sp_widget display_value="Carousel">cf1a5153cb21020000f8d856634c9c3c</sp_widget><sys_class_name>sp_instance_carousel</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-10-22 16:41:42</sys_created_on><sys_id>246002e21b17f410c297c803604bcba5</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sp_instance_carousel_246002e21b17f410c297c803604bcba5</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-10-22 16:41:42</sys_updated_on><title/><url/><widget_parameters/></sp_instance_carousel><sys_translated_text action="delete_multiple" query="documentkey=246002e21b17f410c297c803604bcba5"/></record_update>]]></payload>
+        <payload_hash>1837386871</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-22 16:41:42</sys_created_on>
+        <sys_id>ec6002e21b17f410c297c803604bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17ca8e130800000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-22 16:41:42</sys_updated_on>
+        <type>Instance of Carousel</type>
+        <update_guid>286002e2ba17f410353f82a0e5aef3a7</update_guid>
+        <update_guid_history>286002e2ba17f410353f82a0e5aef3a7:1837386871</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">4970cee61b17f410c297c803604bcb0d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-22 16:42:01</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_carousel">sp_instance_carousel</sys_db_object>
+        <sys_id>5f9b1081eeea49d68db3c37f31a890d9</sys_id>
+        <sys_metadata>246002e21b17f410c297c803604bcba5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sp_instance_carousel_246002e21b17f410c297c803604bcba5</sys_update_name>
+        <sys_update_version display_value="sp_instance_carousel_246002e21b17f410c297c803604bcba5">ec6002e21b17f410c297c803604bcba7</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-22 16:42:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

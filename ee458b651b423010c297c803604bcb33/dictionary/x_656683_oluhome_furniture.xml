@@ -3,9 +3,9 @@
         <element choice="2" label="Furniture type" max_length="40" name="furniture_type" type="string">
             <choice>
                 <element inactive_on_update="false" label="Cabinet"/>
-                <element inactive_on_update="false" label="Settee"/>
-                <element inactive_on_update="false" label="Table"/>
-                <element inactive="true" inactive_on_update="true" label="Cabinet" sequence="0"/>
+                <element inactive_on_update="false" label="Cabinet" sequence="0"/>
+                <element inactive_on_update="false" label="Cabinet" sequence="0"/>
+                <element inactive="true" inactive_on_update="true" label="Cabinet" sequence="1"/>
             </choice>
         </element>
         <element label="Materials" max_length="40" name="materials" type="string"/>
