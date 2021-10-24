@@ -3,7 +3,7 @@
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>balance</element>
             <help/>
-            <hint/>
+            <hint>Automatically updated when grand total changes, while taking completed payments into account</hint>
             <label>Balance</label>
             <language>en</language>
             <name>x_656683_oluhome_payment_plan</name>
@@ -12,14 +12,14 @@
             <sys_created_by>kcuster</sys_created_by>
             <sys_created_on>2021-10-24 14:00:35</sys_created_on>
             <sys_id>37aeef071b9f7810c297c803604bcbde</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_name>Balance</sys_name>
             <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
             <sys_policy/>
             <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
             <sys_update_name>sys_documentation_x_656683_oluhome_payment_plan_balance_en</sys_update_name>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 14:00:35</sys_updated_on>
+            <sys_updated_on>2021-10-24 16:22:40</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>

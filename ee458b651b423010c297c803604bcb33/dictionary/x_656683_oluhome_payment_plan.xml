@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="Payment Plan" max_length="40" name="x_656683_oluhome_payment_plan" type="collection">
-        <element label="Balance" max_length="20" name="balance" type="currency"/>
-        <element label="Grand total" max_length="20" name="grand_total" type="currency"/>
+        <element hint="Automatically updated when grand total changes, while taking completed payments into account" label="Balance" max_length="20" name="balance" type="currency"/>
+        <element hint="Automatically updated when subtotal or tax changes" label="Grand total" max_length="20" name="grand_total" type="currency"/>
         <element label="Notes" max_length="1000" name="notes" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Payee" max_length="32" name="payee" reference="x_656683_oluhome_vendors" reference_qual="prospect=false^EQ" reference_qual_condition="prospect=false^EQ" type="reference"/>
-        <element label="Subtotal" max_length="20" name="payment_amount" type="currency"/>
+        <element hint="Automatically updated when items are added or removed from plan" label="Subtotal" max_length="20" name="payment_amount" type="currency"/>
         <element label="Short description" max_length="100" name="short_description" type="string"/>
         <element choice="3" default="draft" label="Status" max_length="40" name="status" type="choice">
             <choice>

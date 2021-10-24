@@ -12,7 +12,7 @@
         <element label="Notes" max_length="8000" name="notes" type="html"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element label="Origin" max_length="40" name="origin" type="string"/>
-        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Payment plan" max_length="32" name="payment_plan" reference="x_656683_oluhome_payment_plan" type="reference"/>
+        <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Payment plan" max_length="32" name="payment_plan" reference="x_656683_oluhome_payment_plan" reference_floats="true" type="reference"/>
         <element label="Photo" max_length="40" name="photo" type="user_image"/>
         <element choice="2" label="Primary color" max_length="40" name="primary_color" type="string">
             <choice>
@@ -35,7 +35,7 @@
         <element label="Restoration notes" max_length="1000" name="restoration_notes" type="string"/>
         <element label="Self-appraisal value" max_length="20" name="self_appraisal_value" type="currency"/>
         <element label="Seller" max_length="32" name="seller" reference="x_656683_oluhome_vendors" type="reference"/>
-        <element label="Short description" max_length="100" name="short_description" type="string"/>
+        <element display="true" label="Short description" max_length="100" name="short_description" type="string"/>
         <element label="Signature" max_length="40" name="signature" type="user_image"/>
         <element label="Signed?" max_length="40" name="signed" type="boolean"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" label="Payment status" max_length="40" name="status" type="choice">
