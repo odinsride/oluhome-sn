@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="DELETE">
+        <alt/>
+        <element>payment_status</element>
+        <name>x_656683_oluhome_payment</name>
+        <style>background-color: green;&#13;
+color: green;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 18:19:55</sys_created_on>
+        <sys_id>76a9245b1b93b810c297c803604bcbcf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_656683_oluhome_payment</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sys_ui_style_76a9245b1b93b810c297c803604bcbcf</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 18:26:29</sys_updated_on>
+        <value/>
+    </sys_ui_style>
+    <sys_translated_text action="DELETE" query="documentkey=76a9245b1b93b810c297c803604bcbcf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="oluhome">ee458b651b423010c297c803604bcb33</application>
+        <file_path/>
+        <instance_id>28775918db8034909a4dcac50596196e</instance_id>
+        <instance_name>dev113609</instance_name>
+        <name>sys_ui_style_76a9245b1b93b810c297c803604bcbcf</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style"><sys_ui_style action="INSERT_OR_UPDATE"><alt/><element>payment_status</element><name>x_656683_oluhome_payment</name><style>background-color: green;&#13;
+color: green;</style><sys_class_name>sys_ui_style</sys_class_name><sys_created_by>kcuster</sys_created_by><sys_created_on>2021-10-24 18:19:55</sys_created_on><sys_id>76a9245b1b93b810c297c803604bcbcf</sys_id><sys_mod_count>3</sys_mod_count><sys_name>x_656683_oluhome_payment</sys_name><sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package><sys_policy/><sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope><sys_update_name>sys_ui_style_76a9245b1b93b810c297c803604bcbcf</sys_update_name><sys_updated_by>kcuster</sys_updated_by><sys_updated_on>2021-10-24 18:26:29</sys_updated_on><value/></sys_ui_style><sys_translated_text action="delete_multiple" query="documentkey=76a9245b1b93b810c297c803604bcbcf"/></record_update>]]></payload>
+        <payload_hash>471010850</payload_hash>
+        <record_name>x_656683_oluhome_payment</record_name>
+        <reverted_from/>
+        <source>844c7b221b423410c297c803604bcbad</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 18:26:29</sys_created_on>
+        <sys_id>3e8b609b1b93b810c297c803604bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17cb38dd5fd0000001</sys_recorded_at>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 18:26:29</sys_updated_on>
+        <type>Style</type>
+        <update_guid>768b609b9b93b8108306b1209594267b</update_guid>
+        <update_guid_history>768b609b9b93b8108306b1209594267b:471010850,c6eaecd74293b810493c36c9ff190a35:-1157678863,843aac5b4c93b810ba5102ca1351aa13:-626850489,fa0a241b9e93b81044f65202edbcdfe3:1319596654</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 18:26:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_style">sys_ui_style</sys_db_object>
+        <sys_id>294f2e0726864f5b8967470dbd5ffdb1</sys_id>
+        <sys_metadata>76a9245b1b93b810c297c803604bcbcf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_656683_oluhome_payment</sys_name>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_parent display_value="Payment">6b102c5f1b53b810c297c803604bcbe6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_scope_delete display_value="">334954f7b3cc491e8ff5a29744785044</sys_scope_delete>
+        <sys_update_name>sys_ui_style_76a9245b1b93b810c297c803604bcbcf</sys_update_name>
+        <sys_update_version display_value="sys_ui_style_76a9245b1b93b810c297c803604bcbcf">3e8b609b1b93b810c297c803604bcb7b</sys_update_version>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 18:26:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

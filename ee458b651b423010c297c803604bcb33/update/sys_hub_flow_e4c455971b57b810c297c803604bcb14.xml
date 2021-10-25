@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build>glide-quebec-12-09-2020__patch7-hotfix2-09-15-2021_09-16-2021_0748.zip</compiler_build>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Update plan scheduled balance when payments are added or removed</description>
+        <internal_name>update_plan_scheduled_balance</internal_name>
+        <label_cache>[{"name":"Created or Updated_1.current.payment_plan.sys_id","label":"Trigger➛Payment Record➛Payment plan➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_656683_oluhome_payment_plan","column_name":"sys_id"},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Table","label":"1➛Payment Plan Table","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record","label":"1➛Payment Plan Record","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"da03cff3-6b4c-4e35-90f2-f9b9f532e713.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da03cff3-6b4c-4e35-90f2-f9b9f532e713.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.payment_plan","label":"Trigger➛Payment Record➛Payment plan","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"reference","base_type":"reference","parent_table_name":"x_656683_oluhome_payment","column_name":"payment_plan"},{"name":"8d6738ce-7212-4338-be56-9733c3f70388.new_value","label":"2➛New value","reference_display":"New value","type":"currency","base_type":"currency","attributes":{"uiType":"currency","uiTypeLabel":"Currency","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"970732a4-effa-45ee-81d9-5bfa9ae53bdc"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record.scheduled_balance","label":"1➛Payment Plan Record➛Scheduled balance","reference":"","reference_display":"Scheduled balance","type":"currency","base_type":"currency","parent_table_name":"x_656683_oluhome_payment_plan","column_name":"scheduled_balance"},{"name":"Created or Updated_1.current.payment_amount","label":"Trigger➛Payment Record➛Payment amount","reference":"","reference_display":"Payment amount","type":"currency","base_type":"currency","parent_table_name":"x_656683_oluhome_payment","column_name":"payment_amount"},{"name":"5b953683-3574-4f50-b1e6-bfa580bdddfb.record","label":"3➛Payment Plan Record","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan Record","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b953683-3574-4f50-b1e6-bfa580bdddfb.table_name","label":"3➛Payment Plan Table","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9258d91f1b57b810c297c803604bcbd2</master_snapshot>
+        <name>oluhome - Update Plan Scheduled Balance</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>7a585d1f1b57b810c297c803604bcb45</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:26:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e4c455971b57b810c297c803604bcb14</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>oluhome - Update Plan Scheduled Balance</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name>sys_hub_flow_e4c455971b57b810c297c803604bcb14</sys_update_name>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:53:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e4c455971b57b810c297c803604bcb14"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e4c455971b57b810c297c803604bcb14"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_656683_oluhome_payment">payment_amountVALCHANGES<item endquery="false" field="payment_amount" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a585d1f1b57b810c297c803604bcb45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>x_656683_oluhome_payment</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <data>{"table":"sys_trigger_runner_mapping","id":"76585d1f1b57b810c297c803604bcb46","name":"trigger_runner","type":"java.util.Collections$UnmodifiableMap"}</data>
+        <identifier>e4c455971b57b810c297c803604bcb14</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>76585d1f1b57b810c297c803604bcb46</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:53:21</sys_updated_on>
+        <trigger display_value="">7a585d1f1b57b810c297c803604bcb45</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_json_chunk action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAGXLWwqAIBBA0b3MdytwKxGD5fggGUFHLKK99yAo6Pce7ga5MtqYGgYGBaOeZpdTZQPdTc0TYy2UMYYioPrh0wuJBHbXl8T/jpc1r48mRlqE2JA5u9WxEOwH5v2lw4YAAAA=</data>
+        <document_id>76585d1f1b57b810c297c803604bcb46</document_id>
+        <field>trigger_runner</field>
+        <length>144</length>
+        <position>0</position>
+        <source_table>sys_trigger_runner_mapping</source_table>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>7e585d1f1b57b810c297c803604bcb46</sys_id>
+    </sys_json_chunk>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e4c455971b57b810c297c803604bcb14^sys_idNOT IN76585d1f1b57b810c297c803604bcb46"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e4c455971b57b810c297c803604bcb14^sys_idNOT IN9ed5595b1b57b810c297c803604bcb39"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>9ed5595b1b57b810c297c803604bcb39</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9ed5595b1b57b810c297c803604bcb39"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9ed5595b1b57b810c297c803604bcb39</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>52d5595b1b57b810c297c803604bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9ed5595b1b57b810c297c803604bcb39</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>9ed5595b1b57b810c297c803604bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <value>x_656683_oluhome_payment</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>9ed5595b1b57b810c297c803604bcb39</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>dad5595b1b57b810c297c803604bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <value>payment_amountVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e4c455971b57b810c297c803604bcb14^sys_idNOT INacc4551b1b57b810c297c803604bcba3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e4c455971b57b810c297c803604bcb14</id>
+        <name>Update Plan Scheduled Balance</name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:26:33</sys_created_on>
+        <sys_id>acc4551b1b57b810c297c803604bcba3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:26:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=e4c455971b57b810c297c803604bcb14^sys_idNOT IN96d5dd1b1b57b810c297c803604bcb93,9ad5595b1b57b810c297c803604bcb2c,d6d5595b1b57b810c297c803604bcb32"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</model>
+        <model_id>e4c455971b57b810c297c803604bcb14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>96d5dd1b1b57b810c297c803604bcb93</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDf2b95d9ffc57b810c4fe2b6c0a0adfb3,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</model>
+        <model_id>e4c455971b57b810c297c803604bcb14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>9ad5595b1b57b810c297c803604bcb2c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</model>
+        <model_id>e4c455971b57b810c297c803604bcb14</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>d6d5595b1b57b810c297c803604bcb32</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e4c455971b57b810c297c803604bcb14^sys_idNOT IN2858991f1b57b810c297c803604bcb3e,6608151f1b57b810c297c803604bcb21,e058991f1b57b810c297c803604bcb45"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="oluhome - Adjust currency value">e108911f1b57b810c297c803604bcbc3</action_type>
+        <action_type_parent/>
+        <comment>Subtract the payment amount from the scheduled balance</comment>
+        <compiled_snapshot>e108911f1b57b810c297c803604bcbc3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>2858991f1b57b810c297c803604bcb3e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <ui_id>8d6738ce-7212-4338-be56-9733c3f70388</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2858991f1b57b810c297c803604bcb3e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2858991f1b57b810c297c803604bcb3e</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:48:17</sys_created_on>
+        <sys_id>76b95d9f1b57b810c297c803604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <value>subtract</value>
+        <variable display_value="Operation">3099599f1b57b810c297c803604bcb8d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2858991f1b57b810c297c803604bcb3e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>adjustment</field>
+        <id>2858991f1b57b810c297c803604bcb3e</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>6858991f1b57b810c297c803604bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e108911f1b57b810c297c803604bcbc3</table>
+        <value>{{Created or Updated_1.current.payment_amount}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>operation</field>
+        <id>2858991f1b57b810c297c803604bcb3e</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:48:17</sys_created_on>
+        <sys_id>f2b95d9f1b57b810c297c803604bcbd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e108911f1b57b810c297c803604bcbc3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>original_value</field>
+        <id>2858991f1b57b810c297c803604bcb3e</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>a458991f1b57b810c297c803604bcb40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e108911f1b57b810c297c803604bcbc3</table>
+        <value>{{ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record.scheduled_balance}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:40:53</sys_created_on>
+        <sys_id>6608151f1b57b810c297c803604bcb21</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <ui_id>ac7eeb8e-42ea-4047-8338-f372ae84fd2a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6608151f1b57b810c297c803604bcb21"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6608151f1b57b810c297c803604bcb21</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:40:53</sys_created_on>
+        <sys_id>2608151f1b57b810c297c803604bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:40:53</sys_updated_on>
+        <value>x_656683_oluhome_payment_plan</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6608151f1b57b810c297c803604bcb21"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>6608151f1b57b810c297c803604bcb21</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:40:53</sys_created_on>
+        <sys_id>ee08151f1b57b810c297c803604bcb23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:40:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created or Updated_1.current.payment_plan.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>6608151f1b57b810c297c803604bcb21</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:40:53</sys_created_on>
+        <sys_id>a208151f1b57b810c297c803604bcb24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:40:53</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>e058991f1b57b810c297c803604bcb45</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:48:17</sys_updated_on>
+        <ui_id>5b953683-3574-4f50-b1e6-bfa580bdddfb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e058991f1b57b810c297c803604bcb45"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e058991f1b57b810c297c803604bcb45</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>e058991f1b57b810c297c803604bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <value>x_656683_oluhome_payment_plan</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e058991f1b57b810c297c803604bcb45"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>e058991f1b57b810c297c803604bcb45</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>ac58991f1b57b810c297c803604bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>e058991f1b57b810c297c803604bcb45</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>e858991f1b57b810c297c803604bcb46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>e058991f1b57b810c297c803604bcb45</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:07</sys_created_on>
+        <sys_id>6058991f1b57b810c297c803604bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:07</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>scheduled_balance={{8d6738ce-7212-4338-be56-9733c3f70388.new_value}}</value>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14^sys_idNOT IN16d5595b1b57b810c297c803604bcb31,16d5dd1b1b57b810c297c803604bcb99,1ed5595b1b57b810c297c803604bcb36"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>16d5595b1b57b810c297c803604bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>16d5dd1b1b57b810c297c803604bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e4c455971b57b810c297c803604bcb14</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:31:19</sys_created_on>
+        <sys_id>1ed5595b1b57b810c297c803604bcb36</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:31:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e4c455971b57b810c297c803604bcb14^sys_idNOT INf6585d1f1b57b810c297c803604bcb47"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerUniqueChange</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"f6585d1f1b57b810c297c803604bcb47","name":"plan"}}</plan>
+        <plan_id>e4c455971b57b810c297c803604bcb14</plan_id>
+        <snapshot>f5c8d55f1b57b810c297c803604bcb09</snapshot>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f6585d1f1b57b810c297c803604bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:16</sys_updated_on>
+        <trigger display_value="">7a585d1f1b57b810c297c803604bcb45</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Update plan scheduled balance when payments are added or removed</description>
+        <internal_name>oluhome__update_plan_scheduled_balance</internal_name>
+        <label_cache>[{"name":"5b953683-3574-4f50-b1e6-bfa580bdddfb.table_name","label":"3➛Payment Plan Table","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5b953683-3574-4f50-b1e6-bfa580bdddfb.record","label":"3➛Payment Plan Record","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created or Updated_1.current.payment_amount","label":"Trigger➛Payment Record➛Payment amount","reference":"","reference_display":"Payment amount","type":"currency","base_type":"currency","parent_table_name":"x_656683_oluhome_payment","column_name":"payment_amount"},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record.scheduled_balance","label":"1➛Payment Plan Record➛Scheduled balance","reference":"","reference_display":"Scheduled balance","type":"currency","base_type":"currency","parent_table_name":"x_656683_oluhome_payment_plan","column_name":"scheduled_balance"},{"name":"8d6738ce-7212-4338-be56-9733c3f70388.new_value","label":"2➛New value","reference_display":"New value","type":"currency","base_type":"currency","attributes":{"uiType":"currency","uiTypeLabel":"Currency","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"970732a4-effa-45ee-81d9-5bfa9ae53bdc"}},{"name":"Created or Updated_1.current.payment_plan","label":"Trigger➛Payment Record➛Payment plan","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"reference","base_type":"reference","parent_table_name":"x_656683_oluhome_payment","column_name":"payment_plan"},{"name":"da03cff3-6b4c-4e35-90f2-f9b9f532e713.table_name","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"da03cff3-6b4c-4e35-90f2-f9b9f532e713.record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiType":"string","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.Table","label":"1➛Table","reference_display":"Table","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8a4d89bd-3f75-4ffc-adfa-1e22090456fc.Record","label":"1➛Record","reference_display":"Record","type":"document_id","base_type":"document_id","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record","label":"1➛Payment Plan Record","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Table","label":"1➛Payment Plan Table","reference":"x_656683_oluhome_payment_plan","reference_display":"Payment Plan","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.status","label":"1➛Status","reference_display":"Status","type":"choice","base_type":"choice","attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"ac7eeb8e-42ea-4047-8338-f372ae84fd2a.error_message","label":"1➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"Created or Updated_1.current.payment_plan.sys_id","label":"Trigger➛Payment Record➛Payment plan➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_656683_oluhome_payment_plan","column_name":"sys_id"}]</label_cache>
+        <master>true</master>
+        <name>oluhome - Update Plan Scheduled Balance</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="oluhome - Update Plan Scheduled Balance">e4c455971b57b810c297c803604bcb14</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9258d91f1b57b810c297c803604bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9258d91f1b57b810c297c803604bcbd2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9258d91f1b57b810c297c803604bcbd2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9258d91f1b57b810c297c803604bcbd2^sys_idNOT INaa581d1f1b57b810c297c803604bcbe9"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>aa581d1f1b57b810c297c803604bcbe9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:16</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aa581d1f1b57b810c297c803604bcbe9"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>aa581d1f1b57b810c297c803604bcbe9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>2a581d1f1b57b810c297c803604bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <value>payment_amountVALCHANGES</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>aa581d1f1b57b810c297c803604bcbe9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>66581d1f1b57b810c297c803604bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <value>unique_changes</value>
+        <variable display_value="Run Trigger">2b9def50c31132002841b63b12d3ae5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>aa581d1f1b57b810c297c803604bcbe9</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>ea581d1f1b57b810c297c803604bcbeb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <value>x_656683_oluhome_payment</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9258d91f1b57b810c297c803604bcbd2^sys_idNOT IN5258d91f1b57b810c297c803604bcbd3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9258d91f1b57b810c297c803604bcbd2</id>
+        <name>oluhome - Update Plan Scheduled Balance</name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>5258d91f1b57b810c297c803604bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_flow_input action="delete_multiple" query="model=9258d91f1b57b810c297c803604bcbd2^sys_idNOT IN56581d1f1b57b810c297c803604bcbc0,9e581d1f1b57b810c297c803604bcbb5,d258d91f1b57b810c297c803604bcbd6"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</model>
+        <model_id>9258d91f1b57b810c297c803604bcbd2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>56581d1f1b57b810c297c803604bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FD9258d91f2257b810c1edfec79e2dedd4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</model>
+        <model_id>9258d91f1b57b810c297c803604bcbd2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>9e581d1f1b57b810c297c803604bcbb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</model>
+        <model_id>9258d91f1b57b810c297c803604bcbd2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>d258d91f1b57b810c297c803604bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9258d91f1b57b810c297c803604bcbd2^sys_idNOT IN6e581d1f1b57b810c297c803604bcbe7,ae581d1f1b57b810c297c803604bcbdf,e6581d1f1b57b810c297c803604bcbd6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>6e581d1f1b57b810c297c803604bcbe7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <ui_id>5b953683-3574-4f50-b1e6-bfa580bdddfb</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e581d1f1b57b810c297c803604bcbe7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6e581d1f1b57b810c297c803604bcbe7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>a6581d1f1b57b810c297c803604bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <value>x_656683_oluhome_payment_plan</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6e581d1f1b57b810c297c803604bcbe7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>6e581d1f1b57b810c297c803604bcbe7</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>62581d1f1b57b810c297c803604bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6e581d1f1b57b810c297c803604bcbe7</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>ae581d1f1b57b810c297c803604bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6e581d1f1b57b810c297c803604bcbe7</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>26581d1f1b57b810c297c803604bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>scheduled_balance={{8d6738ce-7212-4338-be56-9733c3f70388.new_value}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="oluhome - Adjust currency value">e108911f1b57b810c297c803604bcbc3</action_type>
+        <action_type_parent display_value="oluhome - Adjust currency value">3946519b1b57b810c297c803604bcb3c</action_type_parent>
+        <comment/>
+        <compiled_snapshot>e108911f1b57b810c297c803604bcbc3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>ae581d1f1b57b810c297c803604bcbdf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <ui_id>8d6738ce-7212-4338-be56-9733c3f70388</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ae581d1f1b57b810c297c803604bcbdf"/>
+    <sys_element_mapping action="delete_multiple" query="id=ae581d1f1b57b810c297c803604bcbdf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>adjustment</field>
+        <id>ae581d1f1b57b810c297c803604bcbdf</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>2a581d1f1b57b810c297c803604bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e108911f1b57b810c297c803604bcbc3</table>
+        <value>{{Created or Updated_1.current.payment_amount}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>original_value</field>
+        <id>ae581d1f1b57b810c297c803604bcbdf</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:15</sys_created_on>
+        <sys_id>66581d1f1b57b810c297c803604bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_e108911f1b57b810c297c803604bcbc3</table>
+        <value>{{ac7eeb8e-42ea-4047-8338-f372ae84fd2a.Record.scheduled_balance}}</value>
+    </sys_element_mapping>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="oluhome - Update Plan Scheduled Balance">9258d91f1b57b810c297c803604bcbd2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>e6581d1f1b57b810c297c803604bcbd6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <ui_id>ac7eeb8e-42ea-4047-8338-f372ae84fd2a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e6581d1f1b57b810c297c803604bcbd6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e6581d1f1b57b810c297c803604bcbd6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>e2581d1f1b57b810c297c803604bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <value>x_656683_oluhome_payment_plan</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e6581d1f1b57b810c297c803604bcbd6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e6581d1f1b57b810c297c803604bcbd6</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>ae581d1f1b57b810c297c803604bcbd7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{Created or Updated_1.current.payment_plan.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e6581d1f1b57b810c297c803604bcbd6</id>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>62581d1f1b57b810c297c803604bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2^sys_idNOT IN1a581d1f1b57b810c297c803604bcbbc,52581d1f1b57b810c297c803604bcbb2,da581d1f1b57b810c297c803604bcbc6"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>1a581d1f1b57b810c297c803604bcbbc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>52581d1f1b57b810c297c803604bcbb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9258d91f1b57b810c297c803604bcbd2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kcuster</sys_created_by>
+        <sys_created_on>2021-10-24 21:42:14</sys_created_on>
+        <sys_id>da581d1f1b57b810c297c803604bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kcuster</sys_updated_by>
+        <sys_updated_on>2021-10-24 21:42:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_flow action="update">
+        <sys_id>e4c455971b57b810c297c803604bcb14</sys_id>
+        <latest_snapshot>9258d91f1b57b810c297c803604bcbd2</latest_snapshot>
+    </sys_hub_flow>
+</record_update>

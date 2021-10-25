@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="payment_method" table="x_656683_oluhome_payment" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>payment_method</element>
+            <name>x_656683_oluhome_payment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 17:42:45</sys_created_on>
+            <sys_id>5281a8df1b53b810c297c803604bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>payment_method</sys_name>
+            <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+            <sys_update_name>sys_choice_x_656683_oluhome_payment_payment_method</sys_update_name>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 17:42:45</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Check</label>
+            <language>en</language>
+            <name>x_656683_oluhome_payment</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 17:42:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1881a8df1b53b810c297c803604bcb6f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 17:42:49</sys_updated_on>
+            <value>check</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Card</label>
+            <language>en</language>
+            <name>x_656683_oluhome_payment</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 17:42:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de81609f1b53b810c297c803604bcb7b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 17:42:58</sys_updated_on>
+            <value>card</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>payment_method</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cash</label>
+            <language>en</language>
+            <name>x_656683_oluhome_payment</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 17:43:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1c91a8df1b53b810c297c803604bcb64</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 17:43:06</sys_updated_on>
+            <value>cash</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

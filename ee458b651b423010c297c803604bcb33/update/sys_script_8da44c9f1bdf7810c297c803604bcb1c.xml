@@ -31,21 +31,22 @@
         <role_conditions/>
         <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
 	
+	// Recalculate the plan subtotal when items are added or removed
 	var grPaymentPlan = new GlideRecord('x_656683_oluhome_payment_plan');
 	var subtotal = 0;
 	var newSubtotal = 0;
 	
 	if (current.payment_plan != '') {
 		grPaymentPlan.get(current.payment_plan);
-		subtotal = parseInt(grPaymentPlan.getValue('payment_amount'));
-		newSubtotal = subtotal + parseInt(current.getValue('purchase_price'));
+		subtotal = parseFloat(grPaymentPlan.getValue('payment_amount'));
+		newSubtotal = subtotal + parseFloat(current.getValue('purchase_price'));
 		grPaymentPlan.setValue('payment_amount', newSubtotal);
 		grPaymentPlan.update();
 	}
 	else {
 		grPaymentPlan.get(previous.payment_plan);
-		subtotal = parseInt(grPaymentPlan.getValue('payment_amount'));
-		newSubtotal = subtotal - parseInt(current.getValue('purchase_price'));
+		subtotal = parseFloat(grPaymentPlan.getValue('payment_amount'));
+		newSubtotal = subtotal - parseFloat(current.getValue('purchase_price'));
 		grPaymentPlan.setValue('payment_amount', newSubtotal);
 		grPaymentPlan.update();
 	}
@@ -57,7 +58,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8da44c9f1bdf7810c297c803604bcb1c</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Update payment plan subtotal</sys_name>
         <sys_overrides/>
         <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
@@ -65,7 +66,7 @@
         <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
         <sys_update_name>sys_script_8da44c9f1bdf7810c297c803604bcb1c</sys_update_name>
         <sys_updated_by>kcuster</sys_updated_by>
-        <sys_updated_on>2021-10-24 15:50:37</sys_updated_on>
+        <sys_updated_on>2021-10-24 22:00:34</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

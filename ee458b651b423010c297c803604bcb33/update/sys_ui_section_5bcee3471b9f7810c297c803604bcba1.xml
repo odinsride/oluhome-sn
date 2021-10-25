@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>e4a3845f1bdf7810c297c803604bcb7b</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>a0cc59931b97b810c297c803604bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>payee</element>
             <position>1</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>60a3845f1bdf7810c297c803604bcb7c</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>2ccc59931b97b810c297c803604bcb46</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>status</element>
             <position>2</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>e4a3845f1bdf7810c297c803604bcb7c</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>a0cc59931b97b810c297c803604bcb47</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>.split</element>
             <position>3</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>6ca3845f1bdf7810c297c803604bcb7c</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>28cc59931b97b810c297c803604bcb47</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>payment_amount</element>
             <position>4</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>e0a3845f1bdf7810c297c803604bcb7d</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>accc59931b97b810c297c803604bcb47</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>tax</element>
             <position>5</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>68a3845f1bdf7810c297c803604bcb7d</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>24cc59931b97b810c297c803604bcb48</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,69 +88,83 @@
             <element>grand_total</element>
             <position>6</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>eca3845f1bdf7810c297c803604bcb7d</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>a8cc59931b97b810c297c803604bcb48</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>scheduled_balance</element>
+            <position>7</position>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>20cc59931b97b810c297c803604bcb49</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>balance</element>
-            <position>7</position>
+            <position>8</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>64a3845f1bdf7810c297c803604bcb7e</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>a4cc59931b97b810c297c803604bcb49</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>.end_split</element>
-            <position>8</position>
+            <position>9</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>e8a3845f1bdf7810c297c803604bcb7e</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>2ccc59931b97b810c297c803604bcb49</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>short_description</element>
-            <position>9</position>
+            <position>10</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>60a3845f1bdf7810c297c803604bcb7f</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>a0cc59931b97b810c297c803604bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>notes</element>
-            <position>10</position>
+            <position>11</position>
             <sys_created_by>kcuster</sys_created_by>
-            <sys_created_on>2021-10-24 15:32:07</sys_created_on>
-            <sys_id>e4a3845f1bdf7810c297c803604bcb7f</sys_id>
+            <sys_created_on>2021-10-24 22:01:30</sys_created_on>
+            <sys_id>28cc59931b97b810c297c803604bcb4a</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_656683_oluhome_payment_plan" sys_domain="global" view="Default view">5bcee3471b9f7810c297c803604bcba1</sys_ui_section>
             <sys_updated_by>kcuster</sys_updated_by>
-            <sys_updated_on>2021-10-24 15:32:07</sys_updated_on>
+            <sys_updated_on>2021-10-24 22:01:30</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>

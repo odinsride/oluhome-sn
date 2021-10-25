@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="payment_method" label="Payment method" language="en" table="x_656683_oluhome_payment">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>payment_method</element>
+            <help/>
+            <hint/>
+            <label>Payment method</label>
+            <language>en</language>
+            <name>x_656683_oluhome_payment</name>
+            <plural>Payment methods</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kcuster</sys_created_by>
+            <sys_created_on>2021-10-24 17:42:34</sys_created_on>
+            <sys_id>2f71a89f1b53b810c297c803604bcb30</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Payment method</sys_name>
+            <sys_package display_value="oluhome" source="x_656683_oluhome">ee458b651b423010c297c803604bcb33</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="oluhome">ee458b651b423010c297c803604bcb33</sys_scope>
+            <sys_update_name>sys_documentation_x_656683_oluhome_payment_payment_method_en</sys_update_name>
+            <sys_updated_by>kcuster</sys_updated_by>
+            <sys_updated_on>2021-10-24 17:42:34</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
